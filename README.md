@@ -19,3 +19,6 @@ mkdir chapter_{1..15}
 ```
 git push -u origin localBranch:remoteBranch
 ````
+## R version
+
+- [How to use `ln -s` to change between R Versions on Mac?](https://stackoverflow.com/questions/56481250/how-to-use-ln-s-to-change-between-r-versions-on-mac)
