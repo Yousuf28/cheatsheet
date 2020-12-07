@@ -16,13 +16,13 @@ mkdir chapter_{1..15}
 for file in *.zip; do unzip "$file" -d "${file%.zip}"; done
 ```
 
-folder1.zip
-folder2.zip
-folder3.zip
-to 
-folder1
-folder2
-folder3
+folder1.zip  
+folder2.zip  
+folder3.zip  
+to   
+folder1  
+folder2  
+folder3  
 
 
 ## Git
