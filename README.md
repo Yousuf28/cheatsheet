@@ -10,6 +10,21 @@
 mkdir chapter_{1..15}
 ```
 
+#### unzip all zip folders with same name in a directory
+
+```
+for file in *.zip; do unzip "$file" -d "${file%.zip}"; done
+```
+
+folder1.zip
+folder2.zip
+folder3.zip
+to 
+folder1
+folder2
+folder3
+
+
 ## Git
 
 #### git pushing to remote branch
