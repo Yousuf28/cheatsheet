@@ -24,6 +24,15 @@ folder1
 folder2  
 folder3  
 
+#### find specific type of file
+```
+find . -name "*.bak" -type f
+```
+find and delete specific type file
+
+```
+find . -name "*.bak" -type f -delete
+```
 
 ## Git
 
