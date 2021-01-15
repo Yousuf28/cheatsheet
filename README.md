@@ -43,6 +43,14 @@ find . -name "*.bak" -type f -delete
 
 #### git pushing to remote branch
 
+- [Git: Merge a Remote branch locally](https://stackoverflow.com/questions/21651185/git-merge-a-remote-branch-locally)  
+
+Whenever I do a merge,   
+I get into the branch I want to merge into (e.g.  
+```git checkout branch-i-am-working-in```)   
+and then do the following:  
+```git merge origin/branch-i-want-to-merge-from```  
+
 - [How to push git branch to remote](https://devconnected.com/how-to-push-git-branch-to-remote/)
 
 ```
