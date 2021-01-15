@@ -41,8 +41,6 @@ find . -name "*.bak" -type f -delete
 
 ## Git
 
-#### git pushing to remote branch
-
 - [Git: Merge a Remote branch locally](https://stackoverflow.com/questions/21651185/git-merge-a-remote-branch-locally)  
 
 Whenever I do a merge,   
