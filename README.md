@@ -54,6 +54,12 @@ and then do the following:
 ```
 git push -u origin localBranch:remoteBranch
 ````
+pull remote branch to new local branch
+ ```
+git fetch origin 'remote_branch':'local_branch_name'
+ ```
+
+
 ## R version
 
 - [How to use `ln -s` to change between R Versions on Mac?](https://stackoverflow.com/questions/56481250/how-to-use-ln-s-to-change-between-r-versions-on-mac)
