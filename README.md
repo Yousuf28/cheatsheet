@@ -58,6 +58,9 @@ pull remote branch to new local branch
  ```
 git fetch origin 'remote_branch':'local_branch_name'
  ```
+ 
+How to compare files from two different branches
+- [How to compare files from two different branches](https://stackoverflow.com/questions/4099742/how-to-compare-files-from-two-different-branches)
 
 
 ## R version
