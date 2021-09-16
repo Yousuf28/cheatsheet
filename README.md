@@ -62,6 +62,21 @@ git fetch origin 'remote_branch':'local_branch_name'
 How to compare files from two different branches
 - [How to compare files from two different branches](https://stackoverflow.com/questions/4099742/how-to-compare-files-from-two-different-branches)
 
+__Apply changes from another branch:__
+
+if the directory is same-  
+Currently I am on branch A, and I want to brings some changes from B.  
+``` git checkout --patch B file_path_from_B ```  
+
+if the file directory is not same:  
+Currently I am on branch A, and I want to brings some changes from B  
+``` git diff A:file_path B:file_path > changes.patch ```  
+this will save changes from B file to chages.patch file  
+I want apply these changes to file in A (A:file_path)  
+``` patch file_path_from_A changes.patch```  
+
+
+
 
 ## R version
 
