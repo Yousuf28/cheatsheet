@@ -75,7 +75,22 @@ this will save changes from B file to chages.patch file
 I want apply these changes to file in A (A:file_path)  
 ``` patch file_path_from_A changes.patch```  
 
+__config local user for specific repo__  
+go to the repository directory  
+``` git config user.name "Yousuf Ali" ```  
+``` git config user.email "yousuf.pharma@gmail.com" ```  
 
+__set github and gitlab ssh__  
+nano config (create a config file). Then type following. I already created different ssh key for gitlab and github in .ssh directoy.   
+
+Host gitlab  
+HostName git.fda.gov  
+IdentityFile ~/.ssh/id_rsa  
+
+Host github.com  
+HostName ssh.github.com  
+IdentityFile ~/.ssh/github_gmail  
+Port 443  
 
 
 ## R version
