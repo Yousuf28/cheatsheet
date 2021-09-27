@@ -38,6 +38,22 @@ find and delete specific type file
 ```
 find . -name "*.bak" -type f -delete
 ```
+### make a alias for directory  
+```alias myp='path/directory'```  
+__list with hidden file and size__  
+
+```alias ll='ls -lah'``` 
+
+__ linux tree alternative- this only print directory__  
+add a in -aR will print hidden directory  
+
+```alias treed="ls -R | grep \":$\" | perl -pe 's/:$//;s/[^-][^\/]*\//    /g;s/^    (\S)/└── \1/;s/(^    |    (?= ))/│   /g;s/    (\S)/└── \1/'"```
+__this print all file recursively (not hidden file)__  
+
+```alias treef='find . -not -path "*/\.*" | sed -e "s/[^-][^\/]*\//  |/g" -e "s/|\([^ ]\)/|-\1/"'```  
+__to include hidden file__ remove -not -path "*/\.*" from line     
+
+```alias treef='find .  | sed -e "s/[^-][^\/]*\//  |/g" -e "s/|\([^ ]\)/|-\1/"'```
 
 ## Git
 
