@@ -38,6 +38,14 @@ find and delete specific type file
 ```
 find . -name "*.bak" -type f -delete
 ```
+
+### find all file name containing character and replace with other chararcter
+find all | and replace with _  
+for forward slash /, use : in pattern.
+```
+find . -type f -name '*|*'  -execdir bash -c 'mv -- "$1" "${1// |/_}"' bash {} \;
+```
+
 ### make a alias for directory  
 ```alias myp='path/directory'```  
 __list with hidden file and size__  
