@@ -116,6 +116,9 @@ HostName ssh.github.com
 IdentityFile ~/.ssh/github_gmail  
 Port 443  
 
+[generate new SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)  
+
+[github and gitlab from same machine](https://medium.com/@viviennediegoencarnacion/manage-github-and-gitlab-accounts-on-single-machine-with-ssh-keys-on-mac-43fda49b7c8d)  
 
 ## R version
 
