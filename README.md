@@ -83,6 +83,18 @@ pull remote branch to new local branch
 git fetch origin 'remote_branch':'local_branch_name'
  ```
  
+track remote branch locally   
+When you're starting to work on an existing remote branch  
+```
+git checkout --track origin/dev
+```   
+you started a new local branch and now want to publish it on the remote for the first time:  
+```
+git push -u origin dev  
+```  
+- [track remote branch](https://www.git-tower.com/learn/git/faq/track-remote-upstream-branch#:~:text=You%20can%20tell%20Git%20to,flag%20with%20%22git%20push%22.)
+ 
+ 
 How to compare files from two different branches
 - [How to compare files from two different branches](https://stackoverflow.com/questions/4099742/how-to-compare-files-from-two-different-branches)
 
