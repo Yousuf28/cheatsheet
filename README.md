@@ -119,6 +119,7 @@ First revert the full commit (puts it in index) but don't commit
 
 Then interactively remove the reverted GOOD changes from the index  
 ```git reset -p```           # -p is short for --patch   
+when ask Unstage this hunk? press n, if want to remove this hunk  
 
 Then commit reverse diff of the bad changes  
 ```git commit -m "Partially revert <sha1>..."```  
