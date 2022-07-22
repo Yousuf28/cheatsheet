@@ -111,6 +111,24 @@ this will save changes from B file to chages.patch file
 I want apply these changes to file in A (A:file_path)  
 ``` patch file_path_from_A changes.patch```  
 
+__partially revert a specific commit__.  
+[reverting-part-of-a-commit-with-git](https://stackoverflow.com/questions/4795600/reverting-part-of-a-commit-with-git)  
+
+First revert the full commit (puts it in index) but don't commit  
+```git revert -n <sha1>```    # -n is short for --no-commit    
+
+Then interactively remove the reverted GOOD changes from the index  
+```git reset -p```           # -p is short for --patch   
+
+Then commit reverse diff of the bad changes  
+```git commit -m "Partially revert <sha1>..."```  
+
+Finally the reverted GOOD changes (which have been unstaged by the reset command) are still in the working tree.   
+They need to be cleaned up. If no other uncommitted changes are left in the working tree, this can be done by  
+```git reset --hard```
+
+
+
 __config local user for specific repo__  
 go to the repository directory  
 ``` git config user.name "Yousuf Ali" ```  
