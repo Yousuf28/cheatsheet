@@ -128,7 +128,9 @@ Finally the reverted GOOD changes (which have been unstaged by the reset command
 They need to be cleaned up. If no other uncommitted changes are left in the working tree, this can be done by  
 ```git reset --hard```
 
-
+_how-can-i-generate-a-git-patch-for-a-specific-commit_  
+ - [how-can-i-generate-a-git-patch-for-a-specific-commit](https://stackoverflow.com/questions/6658313/how-can-i-generate-a-git-patch-for-a-specific-commit)  
+```git format-patch -1 SHA_number --stdout > patch_file.patch```
 
 __config local user for specific repo__  
 go to the repository directory  
