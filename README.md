@@ -1,15 +1,13 @@
 # cheatsheet
-
-
-## R tutorial
-
-- [R Tutorial and tips](https://github.com/Yousuf28/R_tutorial/blob/master/README.md)
-
 # Terminal
 
 ## terminal keyboard shortcut
 
 [terminal](https://gist.github.com/Yousuf28/16a6eb208f4673acf04a82f13255b9fb)
+
+## R tutorial
+
+- [R Tutorial and tips](https://github.com/Yousuf28/R_tutorial/blob/master/README.md)
 
 ## 
 
