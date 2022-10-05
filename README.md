@@ -3,7 +3,7 @@
 
 ## terminal keyboard shortcut
 
-[terminal](https://gist.github.com/Yousuf28/16a6eb208f4673acf04a82f13255b9fb)  
+[cheatsheet_keyboard_shortcut](https://github.com/Yousuf28/cheatsheet/blob/master/terminal/terminal.md)  
 [vscode for windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
 
 ## R tutorial
