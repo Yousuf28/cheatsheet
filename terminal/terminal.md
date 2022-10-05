@@ -62,4 +62,5 @@ Bash Shortcuts
 | ctrl + 1/2/3| toggle between editor group|
 | ctrl + k, z| toggle zen mode|
 
- 
+ ### built from here 
+ [source](https://gist.github.com/Yousuf28/16a6eb208f4673acf04a82f13255b9fb)
