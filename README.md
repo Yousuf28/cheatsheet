@@ -7,6 +7,10 @@
 
 # Terminal
 
+## terminal keyboard shortcut
+
+[terminal](https://gist.github.com/Yousuf28/16a6eb208f4673acf04a82f13255b9fb)
+
 ## 
 
 #### make many folder at once
