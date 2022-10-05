@@ -55,7 +55,7 @@ Bash Shortcuts
 | ctrl + B          | show/hide sidebar |
 | ctrl + \ | split editor to right|
 | ctrl + T| toggle miximize panel/terminal|
-| ctrl + T, E| maximize editor|
+| ctrl + K, L| maximize editor|
 | ctrl + alt + shift + L/R/B | move terminal/panel to left/right/bottom|
 | ctrl + Tab | toggle between files|
 | ctrl + 1/2/3| toggle between editor group|
