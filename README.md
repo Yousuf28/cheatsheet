@@ -68,6 +68,8 @@ __to include hidden file__ remove -not -path "*/\.*" from line
 
 ## Git
 
+- [git guide](https://github.com/Yousuf28/git-guide)
+
 - [Git: Merge a Remote branch locally](https://stackoverflow.com/questions/21651185/git-merge-a-remote-branch-locally)  
 
 Whenever I do a merge,   
