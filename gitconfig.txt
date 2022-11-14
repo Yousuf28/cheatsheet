@@ -1,0 +1,14 @@
+[user]
+	name = Yousuf Ali
+	email = yousuf.pharma@gmail.com
+[init]
+	defaultBranch = main
+[safe]
+	directory = C:/Program Files/Git/workspaces/toxSummary
+[alias]
+	logt = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
+	logs = log --graph --pretty=oneline --abbrev-commit
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
