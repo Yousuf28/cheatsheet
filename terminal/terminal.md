@@ -44,6 +44,8 @@ Bash Shortcuts
 | shift + ctrl + leftArrow   | select word from curosr to left |
 | shift + right          | select character from cursor to the right | 
 | __shift + alt + downArrow__          | __duplicate current line to next line__ | 
+| __shift + alt + rightArrow__          | __code selection expand__ | 
+| __shift + alt + leftArrow__          | __code selection shrink__ | 
 | __ctrl + mouse click__ | __multicursor insert__|
 |__alt + mouse clink on R function__| __open function file__|
 |__ctrl + ` __| __open terminal__|
