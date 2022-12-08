@@ -1,6 +1,22 @@
 # cheatsheet
 # Terminal
 
+### terminal promp generator
+- [link](https://bashrcgenerator.com/)  
+first create the PS1 variable and copy to .bashrc file.   
+add   
+```
+if [ -r ~/.profile ]; then . ~/.profile; fi
+case "$-" in *i*) if [ -r ~/.bashrc ]; then . ~/.bashrc; fi;; esac
+```  
+
+to .bash_profile file.  
+good starting point could be   
+```
+export PS1="\[\033[38;5;10m\]\u\[$(tput sgr0)\]:\[$(tput sgr0)\]\[\033[38;5;6m\]\w\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;11m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[$(tput sgr0)\]\n\\$\[$(tput sgr0)\]"
+
+```
+
 ## terminal keyboard shortcut
 
 [cheatsheet_keyboard_shortcut](https://github.com/Yousuf28/cheatsheet/blob/master/terminal/terminal.md)  
