@@ -16,6 +16,12 @@ good starting point could be
 export PS1="\[\033[38;5;10m\]\u\[$(tput sgr0)\]:\[$(tput sgr0)\]\[\033[38;5;6m\]\w\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;11m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[$(tput sgr0)\]\n\\$\[$(tput sgr0)\]"
 
 ```
+to change terminal cursor block/bar copy in .bashrc file  
+- [link](https://stackoverflow.com/questions/4416909/anyway-change-the-cursor-vertical-line-instead-of-a-box)
+
+```
+echo -e -n "\x1b[\x35 q" # changes to blinking bar
+```
 
 ## terminal keyboard shortcut
 
