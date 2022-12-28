@@ -1,4 +1,11 @@
 # cheatsheet
+
+[different cheatsheet](https://devhints.io)  
+
+# vim  
+[vim_cheatsheet](https://vim.rtorr.com/)  
+[vim_cheatsheet](https://vimsheet.com/)  
+[https://devhints.io/](https://devhints.io)  
 # Terminal
 
 ### terminal promp generator
