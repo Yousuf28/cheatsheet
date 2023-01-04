@@ -200,6 +200,8 @@ It does have a significant strength though: your fingers can stay on the main ke
 - I highly recommend you switch the mapping of your caps lock and escape keys. You'll love it, promise! Switching the two keys is platform dependent.
 
 ## Visual Studio Code
+gb - adds another cursor on the next word it finds which is the same as the word under the cursor.  
+gh - equivalent to hovering your mouse over wherever the cursor is. Handy for seeing types and error messages without reaching for the mouse!  
 
 - VSCode is the simplest way to give you a fantastic editor that also gives you the benefits of VIM. Just install [the VIM extension](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim).
 - I made a [few slight changes](https://gist.github.com/theicfire/dc3f7f8c9a19467643a58dff22eb00d9) which improved the experience for me.
