@@ -8,6 +8,6 @@ put this in .lintr file.
   ```
   
   ###
-  
+  .lintr file can be put in individual  project folder or  in user folder for global action
  - can be further customize
  - [lintr](https://lintr.r-lib.org/reference/linters.html)
