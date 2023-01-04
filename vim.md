@@ -87,7 +87,7 @@ __ci(xyz[Esc]__ - This is a weird one. Here, the 'i' does not mean insert mode. 
 - `ci(` - delete and insert cursor
 - `ci{`
 - `ci[`
-- __summary__ di( delete inside text,  ci( delete inside text and insert mode. da( delete inside text +  () , ca( delete inside text+ () and insert mode.
+- __summary__ `di(` delete inside text,  `ci(` delete inside text and insert mode. `da(` delete inside text +  () , `ca(` delete inside text+ () and insert mode.
 
 #### faq
 How to duplicate a whole line in Vim?
