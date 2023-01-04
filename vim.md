@@ -69,6 +69,26 @@ I’ve compiled a list of essential Vim commands that I use every day. I have th
 - `X` - Delete (cut) previous character
 - `d` / `c` - By default, these copy the deleted text
 
+#### delete
+- [link](https://github.com/tsironis/vim-cheat/blob/master/cheatsheet.md)  
+__ci(xyz[Esc]__ - This is a weird one. Here, the 'i' does not mean insert mode. Instead it means __inside the parenthesis__. So this sequence cuts the text inside parenthesis you're standing in and replaces it with "xyz". It also works inside square and figure brackets -- just do ci[ or ci{ correspondingly. Naturally, you can do di (if you just want to delete all text without typing anything. You can also do a instead of i if you want to delete the parentheses as well and not just text inside them.  
+
+- `de` - Delete everything till the end of the word 
+- `dt.` - delete until next dot .
+- `diw` - to delete the current word
+- `capital D` - (take a deep breath) Deletes the rest of the line to the right of the cursor
+- `di(` - to delete within (). akks (aksalsk) alks -> akks () alks
+- `di{` - to delete within  {}
+- `di[` - to delete within  []
+- `di"` - to delete the text between the quotes ""
+- `dab` - "delete arounb brackets" []
+- `da[` - delete around bracket [], da( and da{ for other. so it delete with paren aks (alksj) aak -> aks  aak
+- `daB` for around curly brackets, {}, t for xml type tags, combinations with normal commands are as expected cib/yaB/dit/vat etc
+- `ci(` - delete and insert cursor
+- `ci{`
+- `ci[`
+
+
 ### Exiting
 
 - `:w` - Write (save) the file, but don't quit
