@@ -58,6 +58,8 @@ I’ve compiled a list of essential Vim commands that I use every day. I have th
 - `V` - Start linewise visual mode
 - `Ctrl+v` - Start visual block mode
 - `Esc` or `Ctrl+[` - Exit visual mode
+###### multicursor in block mode
+- `Ctrl+v` -visual block, and then up or down give multicursor, with shift+i (I) insert mode and  type    
 
 ### Clipboard
 
@@ -87,6 +89,7 @@ __ci(xyz[Esc]__ - This is a weird one. Here, the 'i' does not mean insert mode. 
 - `ci(` - delete and insert cursor
 - `ci{`
 - `ci[`
+- `vi(` select in visual mode  
 - __summary__ `di(` delete inside text,  `ci(` delete inside text and insert mode. `da(` delete inside text +  () , `ca(` delete inside text+ () and insert mode.  
 - `vi(` - visually select inside (), `va(` select text+()  
 - `yi(` -  copy inside () and `ya(` copy inside text + ()    
