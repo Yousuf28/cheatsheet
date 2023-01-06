@@ -124,6 +124,8 @@ How to duplicate a whole line in Vim?
 
 - `Ctrl+d` - Move down half a page
 - `Ctrl+b` - Move up whole page
+- `Ctrl+e` - scroll down by line
+- `Ctrl+y` - scroll up by line
 - `}` - Go forward by paragraph (the next blank line)
 - `{` - Go backward by paragraph (the next blank line)
 - __`gg`__ - Go to the top of the page
