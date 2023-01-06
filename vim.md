@@ -112,6 +112,7 @@ How to duplicate a whole line in Vim?
 - `N` - Repeat search in opposite direction
 - `:%s/old/new/g` - Replace all old with new throughout file ([gn](http://vimcasts.org/episodes/operating-on-search-matches-using-gn/) is better though)
 - `:%s/old/new/gc` - Replace all old with new throughout file with confirmations
+- `:noh` - To turn off highlighting until the next search
 
 ### General
 
