@@ -49,7 +49,8 @@ Bash Shortcuts
 | __ctrl + mouse click__ | __multicursor insert__|
 |__alt + mouse clink on R function__| __open function file__|
 |__ctrl + ` __| __open terminal__|
-|__Alt +  up/down Arrow__| move cursor between split terminal|
+|__Alt +  up/down Arrow__| move cursor between __split__ terminal|
+|__ctrl +  page up/page down Arrow__| move cursor between terminal|
 
 ### interface
 | command  | description                    | 
