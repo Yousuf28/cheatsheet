@@ -56,6 +56,7 @@ Bash Shortcuts
 |----------|--------------------------------|
 | ctrl + B          | show/hide sidebar |
 | ctrl + \ | split editor to right|
+| ctrl + k, ctrl + \ | split editor to down|
 | ctrl +J | toggle panel/terminal |
 | ctrl + T| toggle miximize panel/terminal|
 | ctrl + K, L| maximize editor|
