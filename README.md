@@ -6,6 +6,9 @@
 [vim_cheatsheet](https://vim.rtorr.com/)  
 [vim_cheatsheet](https://vimsheet.com/)  
 [https://devhints.io/](https://devhints.io)  
+
+[vim in the browser_ vimium](https://github.com/philc/vimium)  
+
 # Terminal
 
 ### terminal promp generator
