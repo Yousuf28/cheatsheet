@@ -3,11 +3,24 @@
 [different cheatsheet](https://devhints.io)  
 
 # vim  
+[My vim cheatsheet](https://github.com/Yousuf28/cheatsheet/blob/master/vim.md)  
 [vim_cheatsheet](https://vim.rtorr.com/)  
 [vim_cheatsheet](https://vimsheet.com/)  
 [https://devhints.io/](https://devhints.io)  
 
 [vim in the browser_ vimium](https://github.com/philc/vimium)  
+
+## terminal keyboard shortcut
+
+[my vscode/terminal navigation shortcut](https://github.com/Yousuf28/cheatsheet/blob/master/terminal/terminal.md)  
+[vscode for windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+## git cheatsheet
+[My git guide](https://github.com/Yousuf28/cheatsheet/blob/master/gitGuide.md)  
+
+
+## R tutorial
+
+- [R Tutorial and tips](https://github.com/Yousuf28/R_tutorial/blob/master/README.md)
 
 # Terminal
 
@@ -33,14 +46,9 @@ to change terminal cursor block/bar copy in .bashrc file
 echo -e -n "\x1b[\x35 q" # changes to blinking bar
 ```
 
-## terminal keyboard shortcut
 
-[cheatsheet_keyboard_shortcut](https://github.com/Yousuf28/cheatsheet/blob/master/terminal/terminal.md)  
-[vscode for windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
 
-## R tutorial
 
-- [R Tutorial and tips](https://github.com/Yousuf28/R_tutorial/blob/master/README.md)
 
 ## 
 
@@ -100,7 +108,6 @@ __to include hidden file__ remove -not -path "*/\.*" from line
 
 ## Git
 
-- [git guide](https://github.com/Yousuf28/cheatsheet/blob/master/gitGuide.md)
 
 - [Git: Merge a Remote branch locally](https://stackoverflow.com/questions/21651185/git-merge-a-remote-branch-locally)  
 
