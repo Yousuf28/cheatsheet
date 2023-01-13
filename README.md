@@ -188,6 +188,8 @@ __change-author-and-email-of-a-git-commit__
 ```
 git-filter-repo --name-callback 'return name.replace(b"OldName", b"NewName")' --email-callback 'return email.replace(b"old@email.com", b"new@email.com")'
 ```
+``` git push -f origin main```  
+
 
 __set github and gitlab ssh__  
 nano config (create a config file). Then type following. I already created different ssh key for gitlab and github in .ssh directoy.   
