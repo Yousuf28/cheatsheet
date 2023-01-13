@@ -183,7 +183,11 @@ go to the repository directory
 ``` git config user.email "yousuf.pharma@gmail.com" ```    
 
 __change-author-and-email-of-a-git-commit__   
-- [change-author-and-email-of-a-git-commit_ all](https://acclaim.agency/blog/change-author-and-email-of-a-git-commit)  
+- [change-author-and-email-of-a-git-commit_ see git filter repo answer](https://stackoverflow.com/questions/2919878/git-rewrite-previous-commit-usernames-and-emails) 
+
+```
+git-filter-repo --name-callback 'return name.replace(b"OldName", b"NewName")' --email-callback 'return email.replace(b"old@email.com", b"new@email.com")'
+```
 
 __set github and gitlab ssh__  
 nano config (create a config file). Then type following. I already created different ssh key for gitlab and github in .ssh directoy.   
