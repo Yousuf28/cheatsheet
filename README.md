@@ -176,10 +176,14 @@ _how-can-i-generate-a-git-patch-for-a-specific-commit_
  - [how-can-i-generate-a-git-patch-for-a-specific-commit](https://stackoverflow.com/questions/6658313/how-can-i-generate-a-git-patch-for-a-specific-commit)  
 ```git format-patch -1 SHA_number --stdout > patch_file.patch```
 
+- [change-author-name-email](https://www.git-tower.com/learn/git/faq/change-author-name-email)  
 __config local user for specific repo__  
 go to the repository directory  
 ``` git config user.name "Yousuf Ali" ```  
-``` git config user.email "yousuf.pharma@gmail.com" ```  
+``` git config user.email "yousuf.pharma@gmail.com" ```    
+
+__change-author-and-email-of-a-git-commit__   
+- [change-author-and-email-of-a-git-commit_ all](https://acclaim.agency/blog/change-author-and-email-of-a-git-commit)  
 
 __set github and gitlab ssh__  
 nano config (create a config file). Then type following. I already created different ssh key for gitlab and github in .ssh directoy.   
