@@ -127,6 +127,7 @@ How to duplicate a whole line in Vim?
 ### Cursor movement
 
 - `Ctrl+d` - Move down half a page
+- `Ctrl+u` - Move up half a page
 - `Ctrl+b` - Move up whole page
 - `Ctrl+e` - scroll down by line
 - `Ctrl+y` - scroll up by line
@@ -135,7 +136,13 @@ How to duplicate a whole line in Vim?
 - __`gg`__ - Go to the top of the page
 - __`G`__ - Go the bottom of the page
 - `: [num] [enter]` - Go to that line in the document
-- `ctrl+e / ctrl+y` - Scroll down/up one line
+- `ctrl+e / ctrl+y` - Scroll down/up one line      
+- [stackoverflow](https://stackoverflow.com/questions/3458689/how-to-move-screen-without-moving-cursor-in-vim/58326724#58326724)  
+<kbd>z</kbd> <kbd>t</kbd> ...or... <kbd>z</kbd> <kbd>enter</kbd>   -->  moves current line to top of screen  
+<kbd>z</kbd> <kbd>z</kbd> ...or... <kbd>z</kbd> <kbd>.</kbd>  -->  moves current line to center of screen  
+<kbd>z</kbd> <kbd>b</kbd> ...or... <kbd>z</kbd> <kbd>-</kbd>   -->  moves current line to bottom  
+For what it's worth, <kbd>z</kbd><kbd>.</kbd> avoids the danger of saving and closing Vi by accidentally typing      
+<kbd>Z</kbd><kbd>Z</kbd> if the caps-lock is on.  
 
 ### Character search
 
