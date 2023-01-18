@@ -21,7 +21,13 @@ if directory not exist. then
 [initial version copied from here](https://github.com/theicfire/vimsheet/blob/gh-pages/index.md)
 # A Great Vim Cheat Sheet
 
-I’ve compiled a list of essential Vim commands that I use every day. I have then given a few instructions on how to make Vim as great as it should be, because it’s painful without configuration.
+[vim_cheatsheet](https://vim.rtorr.com/)  
+[vim_cheatsheet](https://vimsheet.com/)  
+[https://devhints.io/](https://devhints.io)  
+
+[vscode vim](https://github.com/VSCodeVim/Vim)
+
+[vim in the browser_ vimium](https://github.com/philc/vimium)  
 
 ## Essentials
 
