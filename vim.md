@@ -100,6 +100,17 @@ __ci(xyz[Esc]__ - This is a weird one. Here, the 'i' does not mean insert mode. 
 - `vi(` - visually select inside (), `va(` select text+()  
 - `yi(` -  copy inside () and `ya(` copy inside text + ()    
 
+- [see also vim surround](https://github.com/tpope/vim-surround)
+- [emacs evil-surround](https://github.com/emacs-evil/evil-surround)
+
+- some text > visually select `some text` > `S"` (capital S) > "some text"
+- some text > cursor on some > `ysiw"` > "some" text
+- "some text" > cursor inside > `cs"'` > 'some text'  
+- "some text" > cursor inside > `cs"`( > (some text)  
+- "some text" > cursor inside > `ds"` > some text  
+- some text > cursor in some > `ys2e"` > "some text"  
+
+
 #### faq
 How to duplicate a whole line in Vim?
 - yy or Y copy the line and p paste the line down and P(upper) paste above current line
