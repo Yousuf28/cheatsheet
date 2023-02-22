@@ -20,6 +20,12 @@ or
 - __find diff between two commit__   
 `git diff commit_Id~2..commit_Id~1 > file.patch`    
   
+  
+- github and gitlab same repo tracking  
+rename origin to destination  ( for github)    
+```git remote rename origin destination```  
+```git remote add name_fda url```  
+
 
 1. [I want to clone a project and start going through the code.](#1-i-want-to-clone-a-project-and-start-going-through-the-code)
 1. [I have cloned the repo. But I am not able to see the proper code!!!](#2-i-have-cloned-the-repo-but-i-am-not-able-to-see-the-proper-code)
