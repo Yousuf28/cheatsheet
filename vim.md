@@ -204,7 +204,7 @@ For what it's worth, <kbd>z</kbd><kbd>.</kbd> avoids the danger of saving and cl
 
 - `q{a-z}`  record macro in a-z character
 - `q` to stop
-- `@{a-z} play macro
+- `@{a-z}` play macro
 
 ### Text Objects
 
