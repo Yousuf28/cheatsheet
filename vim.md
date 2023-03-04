@@ -200,6 +200,12 @@ For what it's worth, <kbd>z</kbd><kbd>.</kbd> avoids the danger of saving and cl
 - `'{a-z}` - Move the cursor to the start of the line where the mark was set
 - `''` - Go back to the previous jump location
 
+### macros
+
+- `q{a-z}`  record macro in a-z character
+- `q` to stop
+- `@{a-z} play macro
+
 ### Text Objects
 
 - Say you have `def (arg1, arg2, arg3)`, where your cursor is somewhere in the middle of the parenthesis.
