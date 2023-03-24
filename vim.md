@@ -210,6 +210,14 @@ For what it's worth, <kbd>z</kbd><kbd>.</kbd> avoids the danger of saving and cl
 - `q` to stop
 - `@{a-z}` play macro
 
+### register
+- `"{a-z}motion` to copy/yank/change/delete into letter
+- `"{a-z}p` to paste
+- `"ayiw` 
+- `"a` tells Vim that the next action (delete / change / yank) will be stored in register a.  
+- `yiw` yanks the word.
+- To get the text from register a, run `"ap`
+
 ### Text Objects
 
 - Say you have `def (arg1, arg2, arg3)`, where your cursor is somewhere in the middle of the parenthesis.
