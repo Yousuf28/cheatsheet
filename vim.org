@@ -30,13 +30,7 @@ version copied from here]] # A Great Vim Cheat Sheet
 [[https://github.com/philc/vimium][vim in the browser_ vimium]]
 
 ** Essentials
-:PROPERTIES:
-:CUSTOM_ID: essentials
-:END:
 *** Cursor movement (Normal/Visual Mode)
-:PROPERTIES:
-:CUSTOM_ID: cursor-movement-normalvisual-mode
-:END:
 - =h= =j= =k= =l= - Arrow keys
 - =w= / =b= - Next/previous word
 - =e= / =ge= - Next/previous *end* of word
@@ -44,9 +38,6 @@ version copied from here]] # A Great Vim Cheat Sheet
 - =^= - First non-blank character of line (same as =0w=)
 
 *** Editing text
-:PROPERTIES:
-:CUSTOM_ID: editing-text
-:END:
 - =i= / *=a=* - Start insert mode at/ *after* cursor
 - =I= / *=A=* - Start insert mode at the beginning/*end* of the line
 - *=o=* / =O= - Add blank line *below*/above current line
@@ -55,9 +46,6 @@ version copied from here]] # A Great Vim Cheat Sheet
 - =dd= - Delete line
 
 *** Operators
-:PROPERTIES:
-:CUSTOM_ID: operators
-:END:
 - Operators also work in Visual Mode
 - =d= - Deletes from the cursor to the movement location
 - =c= - Deletes from the cursor to the movement location, then starts
@@ -69,9 +57,6 @@ version copied from here]] # A Great Vim Cheat Sheet
   cursor to the end of the line.
 
 *** Marking text (visual mode)
-:PROPERTIES:
-:CUSTOM_ID: marking-text-visual-mode
-:END:
 - =v= - Start visual mode
 - =V= - Start linewise visual mode
 - =Ctrl+v= - Start visual block mode
@@ -80,9 +65,6 @@ version copied from here]] # A Great Vim Cheat Sheet
   shift+i (I) insert mode and type
 
 *** Clipboard
-:PROPERTIES:
-:CUSTOM_ID: clipboard
-:END:
 - =yy= - Yank (copy) a line
 - =p= - Paste after cursor
 - =P= - Paste before cursor
@@ -92,9 +74,6 @@ version copied from here]] # A Great Vim Cheat Sheet
 - =d= / =c= - By default, these copy the deleted text
 
 **** delete
-:PROPERTIES:
-:CUSTOM_ID: delete
-:END:
 - [[https://github.com/tsironis/vim-cheat/blob/master/cheatsheet.md][link]]\\
   *ci(xyz[Esc]* - This is a weird one. Here, the 'i' does not mean
   insert mode. Instead it means *inside the parenthesis*. So this
@@ -164,27 +143,18 @@ version copied from here]] # A Great Vim Cheat Sheet
 - some text > cursor in some > =ys2e"= > "some text"
 
 **** faq
-:PROPERTIES:
-:CUSTOM_ID: faq
-:END:
 How to duplicate a whole line in Vim? - yy or Y copy the line and p
 paste the line down and P(upper) paste above current line - 2yy can be
 used to copy 2 lines (and for any other n) - dd or D delete the line and
 p paste the line
 
 *** Exiting
-:PROPERTIES:
-:CUSTOM_ID: exiting
-:END:
 - =:w= - Write (save) the file, but don't quit
 - =:wq= - Write (save) and quit
 - =:q= - Quit (fails if anything has changed)
 - =:q!= - Quit and throw away changes
 
 *** Search/Replace
-:PROPERTIES:
-:CUSTOM_ID: searchreplace
-:END:
 - =/pattern= - Search for pattern
 - =?pattern= - Search backward for pattern
 - =n= - Repeat search in same direction
@@ -200,20 +170,11 @@ p paste the line
 - =#= - backword search word under cursor
 
 *** General
-:PROPERTIES:
-:CUSTOM_ID: general
-:END:
 - =u= - Undo
 - =Ctrl+r= - Redo
 
 ** Advanced
-:PROPERTIES:
-:CUSTOM_ID: advanced
-:END:
 *** Cursor movement
-:PROPERTIES:
-:CUSTOM_ID: cursor-movement
-:END:
 - =Ctrl+d= - Move down half a page
 - =Ctrl+u= - Move up half a page
 - =Ctrl+b= - Move up whole page
@@ -234,9 +195,6 @@ p paste the line
   ZZ if the caps-lock is on.
 
 *** Character search
-:PROPERTIES:
-:CUSTOM_ID: character-search
-:END:
 - *=f [char]=* - *Move forward to the given char*
 - =F [char]= - Move backward to the given char
 - =t [char]= - Move forward to before the given char
@@ -244,24 +202,15 @@ p paste the line
 - =;= / =,= - Repeat search forwards/backwards
 
 *** Editing text
-:PROPERTIES:
-:CUSTOM_ID: editing-text-1
-:END:
 - =J= - Join line below to the current one
 - =r [char]= - Replace a single character with the specified char (does
   not use Insert mode)
 
 *** Visual mode
-:PROPERTIES:
-:CUSTOM_ID: visual-mode
-:END:
 - =O= - Move to other corner of block
 - =o= - Move to other end of marked area
 
 *** File Tabs
-:PROPERTIES:
-:CUSTOM_ID: file-tabs
-:END:
 - =:e filename= - Edit a file
 - =:tabe= - Make a new tab
 - *=gt=* - *Go to the next tab*
@@ -274,9 +223,6 @@ p paste the line
 - =ctrl+wq= - Quit a window
 
 *** Marks
-:PROPERTIES:
-:CUSTOM_ID: marks
-:END:
 - ='= single quote
 - Marks allow you to jump to designated points in your code.
 - =m{a-z}= - Set mark {a-z} at cursor position
@@ -286,17 +232,11 @@ p paste the line
 - =''= - Go back to the previous jump location
 
 *** macros
-:PROPERTIES:
-:CUSTOM_ID: macros
-:END:
 - =q{a-z}= record macro in a-z character
 - =q= to stop
 - =@{a-z}= play macro
 
 *** register
-:PROPERTIES:
-:CUSTOM_ID: register
-:END:
 - ="{a-z}motion= to copy/yank/change/delete into letter
 - ="{a-z}p= to paste
 - ="ayiw=
@@ -306,9 +246,6 @@ p paste the line
 - To get the text from register a, run ="ap=
 
 *** Text Objects
-:PROPERTIES:
-:CUSTOM_ID: text-objects
-:END:
 - Say you have =def (arg1, arg2, arg3)=, where your cursor is somewhere
   in the middle of the parenthesis.
 - =di(= deletes everything between the parenthesis. That says "change
@@ -318,9 +255,6 @@ p paste the line
   more]]
 
 *** General
-:PROPERTIES:
-:CUSTOM_ID: general-1
-:END:
 - =.= - Repeat last command
 - =Ctrl+r + 0= in insert mode inserts the last yanked text (or in
   command mode)
@@ -328,9 +262,6 @@ p paste the line
 - =%= - jumps between matching =()= or ={}=
 
 * Making VIM actually useful
-:PROPERTIES:
-:CUSTOM_ID: making-vim-actually-useful
-:END:
 Vim is quite unpleasant out of the box. It's an arcane experience:
 
 - Autocomplete is missing
@@ -349,17 +280,11 @@ towards getting the benefits of VIM without the drawbacks. Here are some
 ideas on how to go about this.
 
 ** Switch caps lock and escape
-:PROPERTIES:
-:CUSTOM_ID: switch-caps-lock-and-escape
-:END:
 - I highly recommend you switch the mapping of your caps lock and escape
   keys. You'll love it, promise! Switching the two keys is platform
   dependent.
 
 ** Visual Studio Code
-:PROPERTIES:
-:CUSTOM_ID: visual-studio-code
-:END:
 gb - adds another cursor on the next word it finds which is the same as
 the word under the cursor.\\
 gh - equivalent to hovering your mouse over wherever the cursor is.
@@ -375,9 +300,6 @@ mouse!
   slight changes]] which improved the experience for me.
 
 ** Configure native VIM
-:PROPERTIES:
-:CUSTOM_ID: configure-native-vim
-:END:
 For all the given limitations, you'll need to find a solution. You can
 either solve the issues one by one, or you can use a reference .vimrc
 settings file that fix most of the issues out-of-the-box.
@@ -388,9 +310,6 @@ settings file that fix most of the issues out-of-the-box.
   vimrc.
 
 *** Using the system clipboard
-:PROPERTIES:
-:CUSTOM_ID: using-the-system-clipboard
-:END:
 - ="+y= copy a selection to the system clipboard
 - ="+p= paste from the system clipboard
 - If this doesn't work, it's probably because Vim was not built with the
@@ -404,9 +323,6 @@ settings file that fix most of the issues out-of-the-box.
       =+clipboard=
 
 ** Sublime Text
-:PROPERTIES:
-:CUSTOM_ID: sublime-text
-:END:
 - Another option is to use Vintageous in Sublime Text (version 3). This
   gives you Vim mode inside Sublime. I suggest this (or a similar setup
   with the Atom editor) if you aren't a Vim master. Check out
@@ -443,9 +359,6 @@ settings file that fix most of the issues out-of-the-box.
   environment! Sweet Dude.
 
 ** Other
-:PROPERTIES:
-:CUSTOM_ID: other
-:END:
 I don't personally use these yet, but I've heard other people do!
 
 - =:qa= - Quit all open tabs (thanks Vince Banzon)
@@ -453,9 +366,6 @@ I don't personally use these yet, but I've heard other people do!
 - =:wqa= - Write and quit all open tabs (thanks Brian Zick)
 
 ** Additional resources
-:PROPERTIES:
-:CUSTOM_ID: additional-resources
-:END:
 - [[file:advanced.html][Advanced Vim]]
 - [[http://www.amazon.com/Practical-Vim-Thought-Pragmatic-Programmers/dp/1934356980][Practical
   Vim]] is a fantastic resource on many of the useful hidden features of

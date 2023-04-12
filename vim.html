@@ -1,206 +1,507 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>vim.html</title>
-<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8"/>
-<link rel="stylesheet" type="text/css" media="all" href="https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.min.css"  />
-<link rel="stylesheet" type="text/css" media="all" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/github.min.css"  /><meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'><style> body { box-sizing: border-box; max-width: 740px; width: 100%; margin: 40px auto; padding: 0 10px; } </style><script id='MathJax-script' async src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'></script><script src='https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js'></script><script>document.addEventListener('DOMContentLoaded', () => { document.body.classList.add('markdown-body'); document.querySelectorAll('pre[lang] > code').forEach((code) => { code.classList.add(code.parentElement.lang); }); document.querySelectorAll('pre > code').forEach((code) => { hljs.highlightBlock(code); }); });</script>
+<!-- 2023-04-12 Wed 16:16 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="Yousuf Ali" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
 </head>
-
 <body>
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org3153ffa">0.1. Essentials</a>
+<ul>
+<li><a href="#org89ff577">0.1.1. Cursor movement (Normal/Visual Mode)</a></li>
+<li><a href="#org4460f98">0.1.2. Editing text</a></li>
+<li><a href="#orgc81efa0">0.1.3. Operators</a></li>
+<li><a href="#orgb3abdba">0.1.4. Marking text (visual mode)</a></li>
+<li><a href="#org94e8d7f">0.1.5. Clipboard</a></li>
+<li><a href="#org57247fc">0.1.6. Exiting</a></li>
+<li><a href="#org5840402">0.1.7. Search/Replace</a></li>
+<li><a href="#org3358b15">0.1.8. General</a></li>
+</ul>
+</li>
+<li><a href="#org7154f80">0.2. Advanced</a>
+<ul>
+<li><a href="#orgb0c257c">0.2.1. Cursor movement</a></li>
+<li><a href="#org1a7d7df">0.2.2. Character search</a></li>
+<li><a href="#orgd667654">0.2.3. Editing text</a></li>
+<li><a href="#org7e31f7b">0.2.4. Visual mode</a></li>
+<li><a href="#org70b83fa">0.2.5. File Tabs</a></li>
+<li><a href="#org2db9950">0.2.6. Marks</a></li>
+<li><a href="#orge8ffd2b">0.2.7. macros</a></li>
+<li><a href="#org84d3eec">0.2.8. register</a></li>
+<li><a href="#org527b68b">0.2.9. Text Objects</a></li>
+<li><a href="#org8be221b">0.2.10. General</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org240a320">1. Making VIM actually useful</a>
+<ul>
+<li><a href="#org035b366">1.1. Switch caps lock and escape</a></li>
+<li><a href="#org9668d76">1.2. Visual Studio Code</a></li>
+<li><a href="#org49e1312">1.3. Configure native VIM</a>
+<ul>
+<li><a href="#org6500eb9">1.3.1. Using the system clipboard</a></li>
+</ul>
+</li>
+<li><a href="#org5168236">1.4. Sublime Text</a></li>
+<li><a href="#orgcea28ea">1.5. Other</a></li>
+<li><a href="#orgbcca343">1.6. Additional resources</a></li>
+</ul>
+</div>
+</div>
+<p>
+put in .vimrc file
+</p>
 
-<p>put in .vimrc file</p>
-<pre><code>set relativenumber
+<pre class="example" id="org7da191d">
+set relativenumber
 set numberwidth=2
 set cpoptions+=n
 inoremap kj &lt;esc&gt;
 vnoremap kj &lt;esc&gt;
 syntax enable
-colorscheme monokai</code></pre>
-<p><code>mkdir ~/.vim/colors</code><br />
+colorscheme monokai
+</pre>
+
+<p>
+<code>mkdir ~/.vim/colors</code><br />
 if directory not exist. then<br />
-<a href="https://github.com/sickill/vim-monokai">download
-monokai</a><br />
+<a href="https://github.com/sickill/vim-monokai">download monokai</a><br />
 and move to colors directory.<br />
 <a href="https://github.com/gkjgh/cobalt">cobalt</a><br />
 <a href="https://github.com/ErichDonGubler/vim-sublime-monokai">sublime
-monokai</a></p>
-<p><a
-href="https://github.com/theicfire/vimsheet/blob/gh-pages/index.md">initial
-version copied from here</a> # A Great Vim Cheat Sheet</p>
-<p><a href="https://vim.rtorr.com/">vim_cheatsheet</a><br />
-<a href="https://vimsheet.com/">vim_cheatsheet</a><br />
-<a href="https://devhints.io">https://devhints.io/</a></p>
-<p><a href="https://github.com/VSCodeVim/Vim">vscode vim</a></p>
-<p><a href="https://github.com/philc/vimium">vim in the browser_
-vimium</a></p>
-<h2 id="essentials">Essentials</h2>
-<h3 id="cursor-movement-normalvisual-mode">Cursor movement
-(Normal/Visual Mode)</h3>
-<ul>
-<li><code>h</code> <code>j</code> <code>k</code> <code>l</code> - Arrow
-keys</li>
+monokai</a>
+</p>
+
+<p>
+<a href="https://github.com/theicfire/vimsheet/blob/gh-pages/index.md">initial
+version copied from here</a> # A Great Vim Cheat Sheet
+</p>
+
+<p>
+<a href="https://vim.rtorr.com/">vim<sub>cheatsheet</sub></a><br />
+<a href="https://vimsheet.com/">vim<sub>cheatsheet</sub></a><br />
+<a href="https://devhints.io">https://devhints.io/</a>
+</p>
+
+<p>
+<a href="https://github.com/VSCodeVim/Vim">vscode vim</a>
+</p>
+
+<p>
+<a href="https://github.com/philc/vimium">vim in the browser_ vimium</a>
+</p>
+
+<div id="outline-container-org3153ffa" class="outline-3">
+<h3 id="org3153ffa"><span class="section-number-3">0.1.</span> Essentials</h3>
+<div class="outline-text-3" id="text-0-1">
+</div>
+<div id="outline-container-org89ff577" class="outline-4">
+<h4 id="org89ff577"><span class="section-number-4">0.1.1.</span> Cursor movement (Normal/Visual Mode)</h4>
+<div class="outline-text-4" id="text-0-1-1">
+<ul class="org-ul">
+<li><code>h</code> <code>j</code> <code>k</code> <code>l</code> - Arrow keys</li>
 <li><code>w</code> / <code>b</code> - Next/previous word</li>
-<li><code>e</code> / <code>ge</code> - Next/previous
-<strong>end</strong> of word</li>
+<li><code>e</code> / <code>ge</code> - Next/previous <b>end</b> of word</li>
 <li><code>0</code> / <code>$</code> - Start/End of line</li>
-<li><code>^</code> - First non-blank character of line (same as
-<code>0w</code>)</li>
+<li><code>^</code> - First non-blank character of line (same as <code>0w</code>)</li>
 </ul>
-<h3 id="editing-text">Editing text</h3>
-<ul>
-<li><code>i</code> / <strong><code>a</code></strong> - Start insert mode
-at/ <strong>after</strong> cursor</li>
-<li><code>I</code> / <strong><code>A</code></strong> - Start insert mode
-at the beginning/<strong>end</strong> of the line</li>
-<li><strong><code>o</code></strong> / <code>O</code> - Add blank line
-<strong>below</strong>/above current line</li>
+</div>
+</div>
+
+<div id="outline-container-org4460f98" class="outline-4">
+<h4 id="org4460f98"><span class="section-number-4">0.1.2.</span> Editing text</h4>
+<div class="outline-text-4" id="text-0-1-2">
+<ul class="org-ul">
+<li><code>i</code> / <b><code>a</code></b> - Start insert mode at/ <b>after</b> cursor</li>
+<li><code>I</code> / <b><code>A</code></b> - Start insert mode at the beginning/*end* of the line</li>
+<li><b><code>o</code></b> / <code>O</code> - Add blank line *below*/above current line</li>
 <li><code>Esc</code> or <code>Ctrl+[</code> - Exit insert mode</li>
 <li><code>d</code> - Delete</li>
 <li><code>dd</code> - Delete line</li>
 </ul>
-<h3 id="operators">Operators</h3>
-<ul>
+</div>
+</div>
+
+<div id="outline-container-orgc81efa0" class="outline-4">
+<h4 id="orgc81efa0"><span class="section-number-4">0.1.3.</span> Operators</h4>
+<div class="outline-text-4" id="text-0-1-3">
+<ul class="org-ul">
 <li>Operators also work in Visual Mode</li>
-<li><code>d</code> - Deletes from the cursor to the movement
-location</li>
-<li><code>c</code> - Deletes from the cursor to the movement location,
-then starts insert mode</li>
+<li><code>d</code> - Deletes from the cursor to the movement location</li>
+<li><code>c</code> - Deletes from the cursor to the movement location, then starts
+insert mode</li>
 <li><code>y</code> - Copy from the cursor to the movement location</li>
 <li><code>&gt;</code> - Indent one level</li>
 <li><code>&lt;</code> - Unindent one level</li>
-<li>You can also combine operators with motions. Ex: <code>d$</code>
-deletes from the cursor to the end of the line.</li>
+<li>You can also combine operators with motions. Ex: <code>d$</code> deletes from the
+cursor to the end of the line.</li>
 </ul>
-<h3 id="marking-text-visual-mode">Marking text (visual mode)</h3>
-<ul>
+</div>
+</div>
+
+<div id="outline-container-orgb3abdba" class="outline-4">
+<h4 id="orgb3abdba"><span class="section-number-4">0.1.4.</span> Marking text (visual mode)</h4>
+<div class="outline-text-4" id="text-0-1-4">
+<ul class="org-ul">
 <li><code>v</code> - Start visual mode</li>
 <li><code>V</code> - Start linewise visual mode</li>
 <li><code>Ctrl+v</code> - Start visual block mode</li>
-<li><code>Esc</code> or <code>Ctrl+[</code> - Exit visual mode ######
-multicursor in block mode</li>
-<li><code>Ctrl+v</code> -visual block, and then up or down give
-multicursor, with shift+i (I) insert mode and type</li>
+<li><code>Esc</code> or <code>Ctrl+[</code> - Exit visual mode ###### multicursor in block mode</li>
+<li><code>Ctrl+v</code> -visual block, and then up or down give multicursor, with
+shift+i (I) insert mode and type</li>
 </ul>
-<h3 id="clipboard">Clipboard</h3>
-<ul>
+</div>
+</div>
+
+<div id="outline-container-org94e8d7f" class="outline-4">
+<h4 id="org94e8d7f"><span class="section-number-4">0.1.5.</span> Clipboard</h4>
+<div class="outline-text-4" id="text-0-1-5">
+<ul class="org-ul">
 <li><code>yy</code> - Yank (copy) a line</li>
 <li><code>p</code> - Paste after cursor</li>
 <li><code>P</code> - Paste before cursor</li>
 <li><code>dd</code> - Delete (cut) a line</li>
 <li><code>x</code> - Delete (cut) current character</li>
 <li><code>X</code> - Delete (cut) previous character</li>
-<li><code>d</code> / <code>c</code> - By default, these copy the deleted
-text</li>
+<li><code>d</code> / <code>c</code> - By default, these copy the deleted text</li>
 </ul>
-<h4 id="delete">delete</h4>
-<ul>
-<li><p><a
-href="https://github.com/tsironis/vim-cheat/blob/master/cheatsheet.md">link</a><br />
-<strong>ci(xyz[Esc]</strong> - This is a weird one. Here, the ‘i’ does
-not mean insert mode. Instead it means <strong>inside the
-parenthesis</strong>. So this sequence cuts the text inside parenthesis
-you’re standing in and replaces it with “xyz”. It also works inside
-square and figure brackets – just do ci[ or ci{ correspondingly.
-Naturally, you can do di (if you just want to delete all text without
-typing anything. You can also do a instead of i if you want to delete
-the parentheses as well and not just text inside them.</p></li>
-<li><p><code>de</code> - Delete everything till the end of the
-word</p></li>
-<li><p><code>dt.</code> - delete until next dot .</p></li>
-<li><p><code>diw</code> - to delete the current word</p></li>
-<li><p><code>capital D</code> - (take a deep breath) Deletes the rest of
-the line to the right of the cursor</p></li>
-<li><p><code>di(</code> - to delete within (). akks (aksalsk) alks -&gt;
-akks () alks</p></li>
-<li><p><code>di{</code> - to delete within {}</p></li>
-<li><p><code>di[</code> - to delete within []</p></li>
-<li><p><code>di"</code> - to delete the text between the quotes
-“”</p></li>
-<li><p><code>dab</code> - “delete arounb brackets” []</p></li>
-<li><p><code>da[</code> - delete around bracket [], da( and da{ for
-other. so it delete with paren aks (alksj) aak -&gt; aks aak</p></li>
-<li><p><code>daB</code> for around curly brackets, {}, t for xml type
-tags, combinations with normal commands are as expected cib/yaB/dit/vat
-etc</p></li>
-<li><p><code>ci(</code> - delete and insert cursor</p></li>
-<li><p><code>ci{</code></p></li>
-<li><p><code>ci[</code></p></li>
-<li><p><code>vi(</code> select in visual mode<br />
-</p></li>
-<li><p><strong>summary</strong> <code>di(</code> delete inside text,
-<code>ci(</code> delete inside text and insert mode. <code>da(</code>
-delete inside text + () , <code>ca(</code> delete inside text+ () and
-insert mode.<br />
-</p></li>
-<li><p><code>vi(</code> - visually select inside (), <code>va(</code>
-select text+()<br />
-</p></li>
-<li><p><code>yi(</code> - copy inside () and <code>ya(</code> copy
-inside text + ()</p></li>
-<li><p><a href="https://github.com/tpope/vim-surround">see also vim
-surround</a></p></li>
-<li><p><a href="https://github.com/emacs-evil/evil-surround">emacs
-evil-surround</a></p></li>
-<li><p>some text &gt; visually select <code>some text</code> &gt;
-<code>S"</code> (capital S) &gt; “some text”</p></li>
-<li><p>some text &gt; cursor on some &gt; <code>ysiw"</code> &gt; “some”
-text</p></li>
-<li><p>“some text” &gt; cursor inside &gt; <code>cs"'</code> &gt; ‘some
-text’<br />
-</p></li>
-<li><p>“some text” &gt; cursor inside &gt; <code>cs"</code>( &gt; (some
-text)<br />
-</p></li>
-<li><p>“some text” &gt; cursor inside &gt; <code>ds"</code> &gt; some
-text<br />
-</p></li>
-<li><p>some text &gt; cursor in some &gt; <code>ys2e"</code> &gt; “some
-text”</p></li>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgc4f10c4"></a>delete<br />
+<div class="outline-text-5" id="text-0-1-5-1">
+<ul class="org-ul">
+<li><a href="https://github.com/tsironis/vim-cheat/blob/master/cheatsheet.md">link</a><br />
+<b>ci(xyz[Esc]</b> - This is a weird one. Here, the &rsquo;i&rsquo; does not mean
+insert mode. Instead it means <b>inside the parenthesis</b>. So this
+sequence cuts the text inside parenthesis you&rsquo;re standing in and
+replaces it with &ldquo;xyz&rdquo;. It also works inside square and figure
+brackets &#x2013; just do ci[ or ci{ correspondingly. Naturally, you can do
+di (if you just want to delete all text without typing anything. You
+can also do a instead of i if you want to delete the parentheses as
+well and not just text inside them.</li>
+
+<li><code>de</code> - Delete everything till the end of the word</li>
+
+<li><code>dt.</code> - delete until next dot .</li>
+
+<li><code>diw</code> - to delete the current word</li>
+
+<li><code>capital D</code> - (take a deep breath) Deletes the rest of the line to the
+right of the cursor</li>
+
+<li><code>di(</code> - to delete within (). akks (aksalsk) alks -&gt; akks () alks</li>
+
+<li><code>di{</code> - to delete within {}</li>
+
+<li><code>di[</code> - to delete within []</li>
+
+<li><code>di"</code> - to delete the text between the quotes “”</li>
+
+<li><code>dab</code> - &ldquo;delete arounb brackets&rdquo; []</li>
+
+<li><code>da[</code> - delete around bracket [], da( and da{ for other. so it delete
+with paren aks (alksj) aak -&gt; aks aak</li>
+
+<li><code>daB</code> for around curly brackets, {}, t for xml type tags, combinations
+with normal commands are as expected cib/yaB/dit/vat etc</li>
+
+<li><code>ci(</code> - delete and insert cursor</li>
+
+<li><code>ci{</code></li>
+
+<li><code>ci[</code></li>
+
+<li><code>vi(</code> select in visual mode<br /></li>
+
+<li><b>summary</b> <code>di(</code> delete inside text, <code>ci(</code> delete inside text and
+insert mode. <code>da(</code> delete inside text + () , <code>ca(</code> delete inside text+
+() and insert mode.<br /></li>
+
+<li><code>vi(</code> - visually select inside (), <code>va(</code> select text+()<br /></li>
+
+<li><code>yi(</code> - copy inside () and <code>ya(</code> copy inside text + ()</li>
+
+<li><a href="https://github.com/tpope/vim-surround">see also vim surround</a></li>
+
+<li><a href="https://github.com/emacs-evil/evil-surround">emacs evil-surround</a></li>
+
+<li>some text &gt; visually select <code>some text</code> &gt; <code>S"</code> (capital S) &gt; &ldquo;some
+text&rdquo;</li>
+
+<li>some text &gt; cursor on some &gt; <code>ysiw"</code> &gt; &ldquo;some&rdquo; text</li>
+
+<li>&ldquo;some text&rdquo; &gt; cursor inside &gt; <code>cs"'</code> &gt; &rsquo;some text&rsquo;<br /></li>
+
+<li>&ldquo;some text&rdquo; &gt; cursor inside &gt; =cs&ldquo;=( &gt; (some text)<br /></li>
+
+<li>&ldquo;some text&rdquo; &gt; cursor inside &gt; <code>ds"</code> &gt; some text<br /></li>
+
+<li>some text &gt; cursor in some &gt; <code>ys2e"</code> &gt; &ldquo;some text&rdquo;</li>
 </ul>
-<h4 id="faq">faq</h4>
-<p>How to duplicate a whole line in Vim? - yy or Y copy the line and p
+</div>
+</li>
+
+<li><a id="org58a45d6"></a>faq<br />
+<div class="outline-text-5" id="text-0-1-5-2">
+<p>
+How to duplicate a whole line in Vim? - yy or Y copy the line and p
 paste the line down and P(upper) paste above current line - 2yy can be
 used to copy 2 lines (and for any other n) - dd or D delete the line and
-p paste the line</p>
-<h3 id="exiting">Exiting</h3>
-<ul>
-<li><code>:w</code> - Write (save) the file, but don’t quit</li>
+p paste the line
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org57247fc" class="outline-4">
+<h4 id="org57247fc"><span class="section-number-4">0.1.6.</span> Exiting</h4>
+<div class="outline-text-4" id="text-0-1-6">
+<ul class="org-ul">
+<li><code>:w</code> - Write (save) the file, but don&rsquo;t quit</li>
 <li><code>:wq</code> - Write (save) and quit</li>
 <li><code>:q</code> - Quit (fails if anything has changed)</li>
 <li><code>:q!</code> - Quit and throw away changes</li>
 </ul>
-<h3 id="searchreplace">Search/Replace</h3>
-<ul>
+</div>
+</div>
+
+<div id="outline-container-org5840402" class="outline-4">
+<h4 id="org5840402"><span class="section-number-4">0.1.7.</span> Search/Replace</h4>
+<div class="outline-text-4" id="text-0-1-7">
+<ul class="org-ul">
 <li><code>/pattern</code> - Search for pattern</li>
 <li><code>?pattern</code> - Search backward for pattern</li>
 <li><code>n</code> - Repeat search in same direction</li>
 <li><code>N</code> - Repeat search in opposite direction</li>
-<li><code>:%s/old/new/g</code> - Replace all old with new throughout
-file (<a
-href="http://vimcasts.org/episodes/operating-on-search-matches-using-gn/">gn</a>
+<li><code>:%s/old/new/g</code> - Replace all old with new throughout file
+(<a href="http://vimcasts.org/episodes/operating-on-search-matches-using-gn/">gn</a>
 is better though)</li>
-<li><code>:%s/old/new/gc</code> - Replace all old with new throughout
-file with confirmations</li>
-<li><code>:noh</code> - To turn off highlighting until the next
-search</li>
+<li><code>:%s/old/new/gc</code> - Replace all old with new throughout file with
+confirmations</li>
+<li><code>:noh</code> - To turn off highlighting until the next search</li>
 <li><code>q/</code> - show recent search term</li>
-<li><code>*</code> - forward search word under cursor (very
-helpful)</li>
+<li><code>*</code> - forward search word under cursor (very helpful)</li>
 <li><code>#</code> - backword search word under cursor</li>
 </ul>
-<h3 id="general">General</h3>
-<ul>
+</div>
+</div>
+
+<div id="outline-container-org3358b15" class="outline-4">
+<h4 id="org3358b15"><span class="section-number-4">0.1.8.</span> General</h4>
+<div class="outline-text-4" id="text-0-1-8">
+<ul class="org-ul">
 <li><code>u</code> - Undo</li>
 <li><code>Ctrl+r</code> - Redo</li>
 </ul>
-<h2 id="advanced">Advanced</h2>
-<h3 id="cursor-movement">Cursor movement</h3>
-<ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7154f80" class="outline-3">
+<h3 id="org7154f80"><span class="section-number-3">0.2.</span> Advanced</h3>
+<div class="outline-text-3" id="text-0-2">
+</div>
+<div id="outline-container-orgb0c257c" class="outline-4">
+<h4 id="orgb0c257c"><span class="section-number-4">0.2.1.</span> Cursor movement</h4>
+<div class="outline-text-4" id="text-0-2-1">
+<ul class="org-ul">
 <li><code>Ctrl+d</code> - Move down half a page</li>
 <li><code>Ctrl+u</code> - Move up half a page</li>
 <li><code>Ctrl+b</code> - Move up whole page</li>
@@ -208,242 +509,326 @@ helpful)</li>
 <li><code>Ctrl+y</code> - scroll up by line</li>
 <li><code>}</code> - Go forward by paragraph (the next blank line)</li>
 <li><code>{</code> - Go backward by paragraph (the next blank line)</li>
-<li><strong><code>gg</code></strong> - Go to the top of the page</li>
-<li><strong><code>G</code></strong> - Go the bottom of the page</li>
+<li><b><code>gg</code></b> - Go to the top of the page</li>
+<li><b><code>G</code></b> - Go the bottom of the page</li>
 <li><code>: [num] [enter]</code> - Go to that line in the document</li>
-<li><code>ctrl+e / ctrl+y</code> - Scroll down/up one line<br />
-</li>
-<li><a
-href="https://stackoverflow.com/questions/3458689/how-to-move-screen-without-moving-cursor-in-vim/58326724#58326724">stackoverflow</a><br />
-<kbd>z</kbd> <kbd>t</kbd> …or… <kbd>z</kbd> <kbd>enter</kbd> –&gt; moves
-current line to top of screen<br />
-<kbd>z</kbd> <kbd>z</kbd> …or… <kbd>z</kbd> <kbd>.</kbd> –&gt; moves
-current line to center of screen<br />
-<kbd>z</kbd> <kbd>b</kbd> …or… <kbd>z</kbd> <kbd>-</kbd> –&gt; moves
-current line to bottom<br />
-For what it’s worth, <kbd>z</kbd><kbd>.</kbd> avoids the danger of
-saving and closing Vi by accidentally typing<br />
-<kbd>Z</kbd><kbd>Z</kbd> if the caps-lock is on.</li>
+<li><code>ctrl+e / ctrl+y</code> - Scroll down/up one line<br /></li>
+<li><a href="https://stackoverflow.com/questions/3458689/how-to-move-screen-without-moving-cursor-in-vim/58326724#58326724">stackoverflow</a><br />
+z t &#x2026;or&#x2026; z enter &#x2013;&gt; moves current line to top of screen<br />
+z z &#x2026;or&#x2026; z . &#x2013;&gt; moves current line to center of screen<br />
+z b &#x2026;or&#x2026; z - &#x2013;&gt; moves current line to bottom<br />
+For what it&rsquo;s worth, z. avoids the danger of saving and closing Vi by
+accidentally typing<br />
+ZZ if the caps-lock is on.</li>
 </ul>
-<h3 id="character-search">Character search</h3>
-<ul>
-<li><strong><code>f [char]</code></strong> - <strong>Move forward to the
-given char</strong></li>
+</div>
+</div>
+
+<div id="outline-container-org1a7d7df" class="outline-4">
+<h4 id="org1a7d7df"><span class="section-number-4">0.2.2.</span> Character search</h4>
+<div class="outline-text-4" id="text-0-2-2">
+<ul class="org-ul">
+<li><b><code>f [char]</code></b> - <b>Move forward to the given char</b></li>
 <li><code>F [char]</code> - Move backward to the given char</li>
 <li><code>t [char]</code> - Move forward to before the given char</li>
 <li><code>T [char]</code> - Move backward to before the given char</li>
-<li><code>;</code> / <code>,</code> - Repeat search
-forwards/backwards</li>
+<li><code>;</code> / <code>,</code> - Repeat search forwards/backwards</li>
 </ul>
-<h3 id="editing-text-1">Editing text</h3>
-<ul>
+</div>
+</div>
+
+<div id="outline-container-orgd667654" class="outline-4">
+<h4 id="orgd667654"><span class="section-number-4">0.2.3.</span> Editing text</h4>
+<div class="outline-text-4" id="text-0-2-3">
+<ul class="org-ul">
 <li><code>J</code> - Join line below to the current one</li>
-<li><code>r [char]</code> - Replace a single character with the
-specified char (does not use Insert mode)</li>
+<li><code>r [char]</code> - Replace a single character with the specified char (does
+not use Insert mode)</li>
 </ul>
-<h3 id="visual-mode">Visual mode</h3>
-<ul>
+</div>
+</div>
+
+<div id="outline-container-org7e31f7b" class="outline-4">
+<h4 id="org7e31f7b"><span class="section-number-4">0.2.4.</span> Visual mode</h4>
+<div class="outline-text-4" id="text-0-2-4">
+<ul class="org-ul">
 <li><code>O</code> - Move to other corner of block</li>
 <li><code>o</code> - Move to other end of marked area</li>
 </ul>
-<h3 id="file-tabs">File Tabs</h3>
-<ul>
+</div>
+</div>
+
+<div id="outline-container-org70b83fa" class="outline-4">
+<h4 id="org70b83fa"><span class="section-number-4">0.2.5.</span> File Tabs</h4>
+<div class="outline-text-4" id="text-0-2-5">
+<ul class="org-ul">
 <li><code>:e filename</code> - Edit a file</li>
 <li><code>:tabe</code> - Make a new tab</li>
-<li><strong><code>gt</code></strong> - <strong>Go to the next
-tab</strong></li>
+<li><b><code>gt</code></b> - <b>Go to the next tab</b></li>
 <li><code>gT</code> - Go to the previous tab</li>
-<li><strong><code>:vsp</code></strong> - <strong>Vertically split
-windows</strong></li>
-<li><strong><code>:split</code></strong> - <strong>horizontally
-split</strong></li>
+<li><b><code>:vsp</code></b> - <b>Vertically split windows</b></li>
+<li><b><code>:split</code></b> - <b>horizontally split</b></li>
 <li><code>ctrl+ws</code> - Split windows horizontally</li>
 <li><code>ctrl+wv</code> - Split windows vertically</li>
 <li><code>ctrl+ww</code> - Switch between windows</li>
 <li><code>ctrl+wq</code> - Quit a window</li>
 </ul>
-<h3 id="marks">Marks</h3>
-<ul>
+</div>
+</div>
+
+<div id="outline-container-org2db9950" class="outline-4">
+<h4 id="org2db9950"><span class="section-number-4">0.2.6.</span> Marks</h4>
+<div class="outline-text-4" id="text-0-2-6">
+<ul class="org-ul">
 <li><code>'</code> single quote</li>
 <li>Marks allow you to jump to designated points in your code.</li>
 <li><code>m{a-z}</code> - Set mark {a-z} at cursor position</li>
-<li>A capital mark {A-Z} sets a global mark and will work between
-files</li>
-<li><code>'{a-z}</code> - Move the cursor to the start of the line where
-the mark was set</li>
+<li>A capital mark {A-Z} sets a global mark and will work between files</li>
+<li><code>'{a-z}</code> - Move the cursor to the start of the line where the mark was
+set</li>
 <li><code>''</code> - Go back to the previous jump location</li>
 </ul>
-<h3 id="macros">macros</h3>
-<ul>
+</div>
+</div>
+
+<div id="outline-container-orge8ffd2b" class="outline-4">
+<h4 id="orge8ffd2b"><span class="section-number-4">0.2.7.</span> macros</h4>
+<div class="outline-text-4" id="text-0-2-7">
+<ul class="org-ul">
 <li><code>q{a-z}</code> record macro in a-z character</li>
 <li><code>q</code> to stop</li>
 <li><code>@{a-z}</code> play macro</li>
 </ul>
-<h3 id="register">register</h3>
-<ul>
-<li><code>"{a-z}motion</code> to copy/yank/change/delete into
-letter</li>
+</div>
+</div>
+
+<div id="outline-container-org84d3eec" class="outline-4">
+<h4 id="org84d3eec"><span class="section-number-4">0.2.8.</span> register</h4>
+<div class="outline-text-4" id="text-0-2-8">
+<ul class="org-ul">
+<li><code>"{a-z}motion</code> to copy/yank/change/delete into letter</li>
 <li><code>"{a-z}p</code> to paste</li>
 <li><code>"ayiw</code></li>
-<li><code>"a</code> tells Vim that the next action (delete / change /
-yank) will be stored in register a.<br />
-</li>
+<li><code>"a</code> tells Vim that the next action (delete / change / yank) will be
+stored in register a.<br /></li>
 <li><code>yiw</code> yanks the word.</li>
 <li>To get the text from register a, run <code>"ap</code></li>
 </ul>
-<h3 id="text-objects">Text Objects</h3>
-<ul>
-<li>Say you have <code>def (arg1, arg2, arg3)</code>, where your cursor
-is somewhere in the middle of the parenthesis.</li>
-<li><code>di(</code> deletes everything between the parenthesis. That
-says “change everything inside the nearest parenthesis”. Without text
-objects, you would need to do <code>T(dt)</code>.</li>
-<li><a
-href="http://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/">Learn
+</div>
+</div>
+
+<div id="outline-container-org527b68b" class="outline-4">
+<h4 id="org527b68b"><span class="section-number-4">0.2.9.</span> Text Objects</h4>
+<div class="outline-text-4" id="text-0-2-9">
+<ul class="org-ul">
+<li>Say you have <code>def (arg1, arg2, arg3)</code>, where your cursor is somewhere
+in the middle of the parenthesis.</li>
+<li><code>di(</code> deletes everything between the parenthesis. That says &ldquo;change
+everything inside the nearest parenthesis&rdquo;. Without text objects, you
+would need to do <code>T(dt)</code>.</li>
+<li><a href="http://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/">Learn
 more</a></li>
 </ul>
-<h3 id="general-1">General</h3>
-<ul>
+</div>
+</div>
+
+<div id="outline-container-org8be221b" class="outline-4">
+<h4 id="org8be221b"><span class="section-number-4">0.2.10.</span> General</h4>
+<div class="outline-text-4" id="text-0-2-10">
+<ul class="org-ul">
 <li><code>.</code> - Repeat last command</li>
-<li><code>Ctrl+r + 0</code> in insert mode inserts the last yanked text
-(or in command mode)</li>
-<li><code>gv</code> - reselect (select last selected block of text, from
-visual mode)</li>
-<li><code>%</code> - jumps between matching <code>()</code> or
-<code>{}</code></li>
+<li><code>Ctrl+r + 0</code> in insert mode inserts the last yanked text (or in
+command mode)</li>
+<li><code>gv</code> - reselect (select last selected block of text, from visual mode)</li>
+<li><code>%</code> - jumps between matching <code>()</code> or <code>{}</code></li>
 </ul>
-<h1 id="making-vim-actually-useful">Making VIM actually useful</h1>
-<p>Vim is quite unpleasant out of the box. It’s an arcane
-experience:</p>
-<ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org240a320" class="outline-2">
+<h2 id="org240a320"><span class="section-number-2">1.</span> Making VIM actually useful</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Vim is quite unpleasant out of the box. It&rsquo;s an arcane experience:
+</p>
+
+<ul class="org-ul">
 <li>Autocomplete is missing</li>
 <li>System clipboard is not used</li>
 <li>Act of typing <code>:w</code> to save is cumbersome</li>
-<li>Mouse doesn’t work</li>
+<li>Mouse doesn&rsquo;t work</li>
 <li>Management of multiple files is tricky</li>
-<li>Integration with other plugins (like compiler warnings) is
-challenging</li>
-<li>Repeatedly indenting/unindenting multiple lines is challenging,
-though possible</li>
+<li>Integration with other plugins (like compiler warnings) is challenging</li>
+<li>Repeatedly indenting/unindenting multiple lines is challenging, though
+possible</li>
 </ul>
-<p>It does have a significant strength though: your fingers can stay on
-the main keyboard keys to do most editing actions. This is faster and
-more ergonomic. I find that the toughest part about VIM is guiding
-people towards getting the benefits of VIM without the drawbacks. Here
-are some ideas on how to go about this.</p>
-<h2 id="switch-caps-lock-and-escape">Switch caps lock and escape</h2>
-<ul>
-<li>I highly recommend you switch the mapping of your caps lock and
-escape keys. You’ll love it, promise! Switching the two keys is platform
+
+<p>
+It does have a significant strength though: your fingers can stay on the
+main keyboard keys to do most editing actions. This is faster and more
+ergonomic. I find that the toughest part about VIM is guiding people
+towards getting the benefits of VIM without the drawbacks. Here are some
+ideas on how to go about this.
+</p>
+</div>
+
+<div id="outline-container-org035b366" class="outline-3">
+<h3 id="org035b366"><span class="section-number-3">1.1.</span> Switch caps lock and escape</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>I highly recommend you switch the mapping of your caps lock and escape
+keys. You&rsquo;ll love it, promise! Switching the two keys is platform
 dependent.</li>
 </ul>
-<h2 id="visual-studio-code">Visual Studio Code</h2>
-<p>gb - adds another cursor on the next word it finds which is the same
-as the word under the cursor.<br />
+</div>
+</div>
+
+<div id="outline-container-org9668d76" class="outline-3">
+<h3 id="org9668d76"><span class="section-number-3">1.2.</span> Visual Studio Code</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+gb - adds another cursor on the next word it finds which is the same as
+the word under the cursor.<br />
 gh - equivalent to hovering your mouse over wherever the cursor is.
 Handy for seeing types and error messages without reaching for the
-mouse!</p>
-<ul>
+mouse!
+</p>
+
+<ul class="org-ul">
 <li>VSCode is the simplest way to give you a fantastic editor that also
-gives you the benefits of VIM. Just install <a
-href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim">the
+gives you the benefits of VIM. Just install
+<a href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim">the
 VIM extension</a>.</li>
-<li>I made a <a
-href="https://gist.github.com/theicfire/dc3f7f8c9a19467643a58dff22eb00d9">few
+<li>I made a
+<a href="https://gist.github.com/theicfire/dc3f7f8c9a19467643a58dff22eb00d9">few
 slight changes</a> which improved the experience for me.</li>
 </ul>
-<h2 id="configure-native-vim">Configure native VIM</h2>
-<p>For all the given limitations, you’ll need to find a solution. You
-can either solve the issues one by one, or you can use a reference
-.vimrc settings file that fix most of the issues out-of-the-box.</p>
-<ul>
-<li><a
-href="https://github.com/theicfire/dotfiles/blob/master/vim/.vimrc">My
-.vimrc file</a> could be a good starting point. Honestly, it’s a bit old
-and not the best. I now use VSCode mainly so I haven’t kept a great
+</div>
+</div>
+
+<div id="outline-container-org49e1312" class="outline-3">
+<h3 id="org49e1312"><span class="section-number-3">1.3.</span> Configure native VIM</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+For all the given limitations, you&rsquo;ll need to find a solution. You can
+either solve the issues one by one, or you can use a reference .vimrc
+settings file that fix most of the issues out-of-the-box.
+</p>
+
+<ul class="org-ul">
+<li><a href="https://github.com/theicfire/dotfiles/blob/master/vim/.vimrc">My
+.vimrc file</a> could be a good starting point. Honestly, it&rsquo;s a bit old
+and not the best. I now use VSCode mainly so I haven&rsquo;t kept a great
 vimrc.</li>
 </ul>
-<h3 id="using-the-system-clipboard">Using the system clipboard</h3>
-<ul>
+</div>
+
+<div id="outline-container-org6500eb9" class="outline-4">
+<h4 id="org6500eb9"><span class="section-number-4">1.3.1.</span> Using the system clipboard</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<ul class="org-ul">
 <li><code>"+y</code> copy a selection to the system clipboard</li>
 <li><code>"+p</code> paste from the system clipboard</li>
-<li>If this doesn’t work, it’s probably because Vim was not built with
-the system clipboard option. To check, run <code>vim --version</code>
-and see if <code>+clipboard</code> exists. If it says
-<code>-clipboard</code>, you will not be able to copy from outside of
-Vim.
-<ul>
+<li>If this doesn&rsquo;t work, it&rsquo;s probably because Vim was not built with the
+system clipboard option. To check, run <code>vim --version</code> and see if
+<code>+clipboard</code> exists. If it says <code>-clipboard</code>, you will not be able to
+copy from outside of Vim.
+<ul class="org-ul">
 <li>For Mac users, homebrew install Vim with the clipboard option.
 Install homebrew and then run <code>brew install vim</code>.
-<ul>
-<li>then move the old Vim binary:
-<code>$ mv /usr/bin/vim /usr/bin/vimold</code></li>
-<li>restart your terminal and you should see <code>vim --version</code>
-now with <code>+clipboard</code></li>
+<ul class="org-ul">
+<li>then move the old Vim binary: <code>$ mv /usr/bin/vim /usr/bin/vimold</code></li>
+<li>restart your terminal and you should see <code>vim --version</code> now with
+<code>+clipboard</code></li>
 </ul></li>
 </ul></li>
 </ul>
-<h2 id="sublime-text">Sublime Text</h2>
-<ul>
-<li><p>Another option is to use Vintageous in Sublime Text (version 3).
-This gives you Vim mode inside Sublime. I suggest this (or a similar
-setup with the Atom editor) if you aren’t a Vim master. Check out <a
-href="advanced.html">Advanced Vim</a> if you are.</p></li>
-<li><p>Vintageous is great, but I suggest you change a few settings to
-make it better.</p>
-<ul>
-<li>Clone <a href="https://github.com/theicfire/Vintageous">this
-repository</a> to
-<code>~/.config/sublime-text-3/Packages/Vintageous</code>, or similar.
-Then check out the “custom” branch.
-<ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5168236" class="outline-3">
+<h3 id="org5168236"><span class="section-number-3">1.4.</span> Sublime Text</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>Another option is to use Vintageous in Sublime Text (version 3). This
+gives you Vim mode inside Sublime. I suggest this (or a similar setup
+with the Atom editor) if you aren&rsquo;t a Vim master. Check out
+<a href="advanced.html">Advanced Vim</a> if you are.</li>
+
+<li>Vintageous is great, but I suggest you change a few settings to make
+it better.
+
+<ul class="org-ul">
+<li>Clone <a href="https://github.com/theicfire/Vintageous">this repository</a>
+to <code>~/.config/sublime-text-3/Packages/Vintageous</code>, or similar. Then
+check out the &ldquo;custom&rdquo; branch.
+<ul class="org-ul">
 <li>Alternatively, you can get a more updated Vintageous version by
 cloning <a href="https://github.com/guillermooo/Vintageous">the
-official</a> repository and then copying over <a
-href="https://github.com/theicfire/Vintageous/commit/19ff6311b01e3ae259b7eb8e3944687b42ba06ff">this
+official</a> repository and then copying over
+<a href="https://github.com/theicfire/Vintageous/commit/19ff6311b01e3ae259b7eb8e3944687b42ba06ff">this
 patch</a>.</li>
 </ul></li>
-<li>Change the user settings
-(<code>User/Preferences.sublime-settings</code>) to include:
-<ul>
+<li>Change the user settings (<code>User/Preferences.sublime-settings</code>) to
+include:
+<ul class="org-ul">
 <li><code>"caret_style": "solid"</code></li>
 <li>This will make the cursor not blink, like in Vim.</li>
-<li>Sublime Text might freeze when you do this. It’s a bug; just restart
-Sublime Text after changing the file.</li>
+<li>Sublime Text might freeze when you do this. It&rsquo;s a bug; just
+restart Sublime Text after changing the file.</li>
 </ul></li>
-<li><code>ctrl+r</code> in Vim means “redo”. But there is a handy Ctrl +
-R shortcut in Sublime Text that gives an “outline” of a file. I remapped
-it to alt+r by putting this in the User keymap
-<ul>
+<li><code>ctrl+r</code> in Vim means &ldquo;redo&rdquo;. But there is a handy Ctrl + R shortcut
+in Sublime Text that gives an &ldquo;outline&rdquo; of a file. I remapped it to
+alt+r by putting this in the User keymap
+<ul class="org-ul">
 <li><code>{ "keys": ["alt+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },</code></li>
 </ul></li>
-<li><a
-href="https://github.com/guillermooo/Vintageous/wiki/Toggling-Vintageous">Add
+<li><a href="https://github.com/guillermooo/Vintageous/wiki/Toggling-Vintageous">Add
 the ability to toggle Vintageous on and off</a></li>
 <li>Mac users: you will not have the ability to hold down a navigation
-key (like holding j to go down). To fix this, run the commands specified
-here: <a
-href="https://gist.github.com/kconragan/2510186">https://gist.github.com/kconragan/2510186</a></li>
+key (like holding j to go down). To fix this, run the commands
+specified here: <a href="https://gist.github.com/kconragan/2510186">https://gist.github.com/kconragan/2510186</a></li>
 </ul></li>
-<li><p>Now you should be able to restart sublime and have a great Vim
-environment! Sweet Dude.</p></li>
+
+<li>Now you should be able to restart sublime and have a great Vim
+environment! Sweet Dude.</li>
 </ul>
-<h2 id="other">Other</h2>
-<p>I don’t personally use these yet, but I’ve heard other people do!</p>
-<ul>
+</div>
+</div>
+
+<div id="outline-container-orgcea28ea" class="outline-3">
+<h3 id="orgcea28ea"><span class="section-number-3">1.5.</span> Other</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+I don&rsquo;t personally use these yet, but I&rsquo;ve heard other people do!
+</p>
+
+<ul class="org-ul">
 <li><code>:qa</code> - Quit all open tabs (thanks Vince Banzon)</li>
 <li><code>:wa</code> - Write all open tabs (thanks Vince Banzon)</li>
-<li><code>:wqa</code> - Write and quit all open tabs (thanks Brian
-Zick)</li>
+<li><code>:wqa</code> - Write and quit all open tabs (thanks Brian Zick)</li>
 </ul>
-<h2 id="additional-resources">Additional resources</h2>
-<ul>
+</div>
+</div>
+
+<div id="outline-container-orgbcca343" class="outline-3">
+<h3 id="orgbcca343"><span class="section-number-3">1.6.</span> Additional resources</h3>
+<div class="outline-text-3" id="text-1-6">
+<ul class="org-ul">
 <li><a href="advanced.html">Advanced Vim</a></li>
-<li><a
-href="http://www.amazon.com/Practical-Vim-Thought-Pragmatic-Programmers/dp/1934356980">Practical
+<li><a href="http://www.amazon.com/Practical-Vim-Thought-Pragmatic-Programmers/dp/1934356980">Practical
 Vim</a> is a fantastic resource on many of the useful hidden features of
 vim.</li>
 </ul>
-
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Yousuf Ali</p>
+<p class="date">Created: 2023-04-12 Wed 16:16</p>
+</div>
 </body>
 </html>
