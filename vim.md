@@ -197,7 +197,7 @@ For what it's worth, <kbd>z</kbd><kbd>.</kbd> avoids the danger of saving and cl
 - `ctrl+wq` - Quit a window
 
 ### Marks
-
+- `'`  single quote
 - Marks allow you to jump to designated points in your code.
 - `m{a-z}` - Set mark {a-z} at cursor position
 - A capital mark {A-Z} sets a global mark and will work between files
