@@ -1,0 +1,10 @@
+#+title: Doomemacs
+
+
+* html
+- =M-x browse-url-of-buffer= render html file
+
+  #+begin_src
+
+ M-x browse-url-of-buffer render html file
+  #+end_src
