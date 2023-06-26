@@ -20,6 +20,7 @@ taken from here.
 <li>“Recent items” are displayed along with the Browse this PC folder.</li>
 <li>Select the file from the desired location to attach the file to the mail.</li>
 </ol>
+
 <h2>Reply to the email</h2>
 <ol>
 <li>Press Ctrl +1 to display the outlook in mail view.</li>

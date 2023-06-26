@@ -1,10 +1,37 @@
 #+title: Doomemacs
 
 
+* R
+
+** debugger
+- C-c C-t b (ess-bp-set) set breakpoint
+- C-c C-t k (ess-bp-kill)
+
+* Python
+
+* org
+
+* markdown
+
+
+
 * html
+**
 - =M-x browse-url-of-buffer= render html file
+** to start a live server
+- impatient-mode need to installed
+- M-x httpd-start
+- M-x impatient-mode
+- open following link
+- http://localhost:8080/imp
+- you see the file list from buffer.
+- click the link
 
-  #+begin_src
 
- M-x browse-url-of-buffer render html file
-  #+end_src
+* others
+
+* javascript
+js-mode enable
+need package js-comint package.
+run-js to start process
+js-comint-send-region after visually select the code

@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-04-12 Wed 16:16 -->
+<!-- 2023-04-12 Wed 17:46 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -200,46 +200,50 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org3153ffa">0.1. Essentials</a>
+<li><a href="#org937ed87">1. A Great Vim Cheat Sheet</a>
 <ul>
-<li><a href="#org89ff577">0.1.1. Cursor movement (Normal/Visual Mode)</a></li>
-<li><a href="#org4460f98">0.1.2. Editing text</a></li>
-<li><a href="#orgc81efa0">0.1.3. Operators</a></li>
-<li><a href="#orgb3abdba">0.1.4. Marking text (visual mode)</a></li>
-<li><a href="#org94e8d7f">0.1.5. Clipboard</a></li>
-<li><a href="#org57247fc">0.1.6. Exiting</a></li>
-<li><a href="#org5840402">0.1.7. Search/Replace</a></li>
-<li><a href="#org3358b15">0.1.8. General</a></li>
+<li><a href="#org133acc7">1.1. Essentials</a>
+<ul>
+<li><a href="#org0d888bb">1.1.1. Cursor movement (Normal/Visual Mode)</a></li>
+<li><a href="#org5123d85">1.1.2. Editing text</a></li>
+<li><a href="#org5a60a76">1.1.3. Operators</a></li>
+<li><a href="#org163cbf8">1.1.4. Marking text (visual mode)</a></li>
+<li><a href="#orgf4fe88e">1.1.5. Clipboard</a></li>
+<li><a href="#org42e0f37">1.1.6. Exiting</a></li>
+<li><a href="#orgd2e01c1">1.1.7. Search/Replace</a></li>
+<li><a href="#org4fa131c">1.1.8. General</a></li>
 </ul>
 </li>
-<li><a href="#org7154f80">0.2. Advanced</a>
+<li><a href="#org1431ef8">1.2. Advanced</a>
 <ul>
-<li><a href="#orgb0c257c">0.2.1. Cursor movement</a></li>
-<li><a href="#org1a7d7df">0.2.2. Character search</a></li>
-<li><a href="#orgd667654">0.2.3. Editing text</a></li>
-<li><a href="#org7e31f7b">0.2.4. Visual mode</a></li>
-<li><a href="#org70b83fa">0.2.5. File Tabs</a></li>
-<li><a href="#org2db9950">0.2.6. Marks</a></li>
-<li><a href="#orge8ffd2b">0.2.7. macros</a></li>
-<li><a href="#org84d3eec">0.2.8. register</a></li>
-<li><a href="#org527b68b">0.2.9. Text Objects</a></li>
-<li><a href="#org8be221b">0.2.10. General</a></li>
+<li><a href="#org6ed6553">1.2.1. Cursor movement</a></li>
+<li><a href="#org0a8f0bb">1.2.2. Character search</a></li>
+<li><a href="#org80a862d">1.2.3. Editing text</a></li>
+<li><a href="#orga07289f">1.2.4. Visual mode</a></li>
+<li><a href="#orge3b7b24">1.2.5. File Tabs</a></li>
+<li><a href="#org63ee123">1.2.6. Marks</a></li>
+<li><a href="#org6ff3635">1.2.7. macros</a></li>
+<li><a href="#org003d30f">1.2.8. register</a></li>
+<li><a href="#orgb265dd7">1.2.9. Text Objects</a></li>
+<li><a href="#org6f9ff1e">1.2.10. General</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org240a320">1. Making VIM actually useful</a>
+<li><a href="#orgbd3bd51">2. Making VIM actually useful</a>
 <ul>
-<li><a href="#org035b366">1.1. Switch caps lock and escape</a></li>
-<li><a href="#org9668d76">1.2. Visual Studio Code</a></li>
-<li><a href="#org49e1312">1.3. Configure native VIM</a>
+<li><a href="#orgae9b726">2.1. Switch caps lock and escape</a></li>
+<li><a href="#orgf9a57aa">2.2. Visual Studio Code</a></li>
+<li><a href="#org27fea14">2.3. Configure native VIM</a>
 <ul>
-<li><a href="#org6500eb9">1.3.1. Using the system clipboard</a></li>
+<li><a href="#org9a9ab57">2.3.1. Using the system clipboard</a></li>
 </ul>
 </li>
-<li><a href="#org5168236">1.4. Sublime Text</a></li>
-<li><a href="#orgcea28ea">1.5. Other</a></li>
-<li><a href="#orgbcca343">1.6. Additional resources</a></li>
+<li><a href="#org43d8742">2.4. Sublime Text</a></li>
+<li><a href="#orgffeefac">2.5. Other</a></li>
+<li><a href="#org990fedc">2.6. Additional resources</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -247,7 +251,7 @@
 put in .vimrc file
 </p>
 
-<pre class="example" id="org7da191d">
+<pre class="example" id="org473b4d9">
 set relativenumber
 set numberwidth=2
 set cpoptions+=n
@@ -269,9 +273,12 @@ monokai</a>
 
 <p>
 <a href="https://github.com/theicfire/vimsheet/blob/gh-pages/index.md">initial
-version copied from here</a> # A Great Vim Cheat Sheet
+version copied from here</a>
 </p>
 
+<div id="outline-container-org937ed87" class="outline-2">
+<h2 id="org937ed87"><span class="section-number-2">1.</span> A Great Vim Cheat Sheet</h2>
+<div class="outline-text-2" id="text-1">
 <p>
 <a href="https://vim.rtorr.com/">vim<sub>cheatsheet</sub></a><br />
 <a href="https://vimsheet.com/">vim<sub>cheatsheet</sub></a><br />
@@ -285,14 +292,15 @@ version copied from here</a> # A Great Vim Cheat Sheet
 <p>
 <a href="https://github.com/philc/vimium">vim in the browser_ vimium</a>
 </p>
-
-<div id="outline-container-org3153ffa" class="outline-3">
-<h3 id="org3153ffa"><span class="section-number-3">0.1.</span> Essentials</h3>
-<div class="outline-text-3" id="text-0-1">
 </div>
-<div id="outline-container-org89ff577" class="outline-4">
-<h4 id="org89ff577"><span class="section-number-4">0.1.1.</span> Cursor movement (Normal/Visual Mode)</h4>
-<div class="outline-text-4" id="text-0-1-1">
+
+<div id="outline-container-org133acc7" class="outline-3">
+<h3 id="org133acc7"><span class="section-number-3">1.1.</span> Essentials</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-org0d888bb" class="outline-4">
+<h4 id="org0d888bb"><span class="section-number-4">1.1.1.</span> Cursor movement (Normal/Visual Mode)</h4>
+<div class="outline-text-4" id="text-1-1-1">
 <ul class="org-ul">
 <li><code>h</code> <code>j</code> <code>k</code> <code>l</code> - Arrow keys</li>
 <li><code>w</code> / <code>b</code> - Next/previous word</li>
@@ -303,9 +311,9 @@ version copied from here</a> # A Great Vim Cheat Sheet
 </div>
 </div>
 
-<div id="outline-container-org4460f98" class="outline-4">
-<h4 id="org4460f98"><span class="section-number-4">0.1.2.</span> Editing text</h4>
-<div class="outline-text-4" id="text-0-1-2">
+<div id="outline-container-org5123d85" class="outline-4">
+<h4 id="org5123d85"><span class="section-number-4">1.1.2.</span> Editing text</h4>
+<div class="outline-text-4" id="text-1-1-2">
 <ul class="org-ul">
 <li><code>i</code> / <b><code>a</code></b> - Start insert mode at/ <b>after</b> cursor</li>
 <li><code>I</code> / <b><code>A</code></b> - Start insert mode at the beginning/*end* of the line</li>
@@ -317,9 +325,9 @@ version copied from here</a> # A Great Vim Cheat Sheet
 </div>
 </div>
 
-<div id="outline-container-orgc81efa0" class="outline-4">
-<h4 id="orgc81efa0"><span class="section-number-4">0.1.3.</span> Operators</h4>
-<div class="outline-text-4" id="text-0-1-3">
+<div id="outline-container-org5a60a76" class="outline-4">
+<h4 id="org5a60a76"><span class="section-number-4">1.1.3.</span> Operators</h4>
+<div class="outline-text-4" id="text-1-1-3">
 <ul class="org-ul">
 <li>Operators also work in Visual Mode</li>
 <li><code>d</code> - Deletes from the cursor to the movement location</li>
@@ -334,9 +342,9 @@ cursor to the end of the line.</li>
 </div>
 </div>
 
-<div id="outline-container-orgb3abdba" class="outline-4">
-<h4 id="orgb3abdba"><span class="section-number-4">0.1.4.</span> Marking text (visual mode)</h4>
-<div class="outline-text-4" id="text-0-1-4">
+<div id="outline-container-org163cbf8" class="outline-4">
+<h4 id="org163cbf8"><span class="section-number-4">1.1.4.</span> Marking text (visual mode)</h4>
+<div class="outline-text-4" id="text-1-1-4">
 <ul class="org-ul">
 <li><code>v</code> - Start visual mode</li>
 <li><code>V</code> - Start linewise visual mode</li>
@@ -348,9 +356,9 @@ shift+i (I) insert mode and type</li>
 </div>
 </div>
 
-<div id="outline-container-org94e8d7f" class="outline-4">
-<h4 id="org94e8d7f"><span class="section-number-4">0.1.5.</span> Clipboard</h4>
-<div class="outline-text-4" id="text-0-1-5">
+<div id="outline-container-orgf4fe88e" class="outline-4">
+<h4 id="orgf4fe88e"><span class="section-number-4">1.1.5.</span> Clipboard</h4>
+<div class="outline-text-4" id="text-1-1-5">
 <ul class="org-ul">
 <li><code>yy</code> - Yank (copy) a line</li>
 <li><code>p</code> - Paste after cursor</li>
@@ -363,8 +371,8 @@ shift+i (I) insert mode and type</li>
 </div>
 
 <ol class="org-ol">
-<li><a id="orgc4f10c4"></a>delete<br />
-<div class="outline-text-5" id="text-0-1-5-1">
+<li><a id="org93bd8ca"></a>delete<br />
+<div class="outline-text-5" id="text-1-1-5-1">
 <ul class="org-ul">
 <li><a href="https://github.com/tsironis/vim-cheat/blob/master/cheatsheet.md">link</a><br />
 <b>ci(xyz[Esc]</b> - This is a weird one. Here, the &rsquo;i&rsquo; does not mean
@@ -428,17 +436,17 @@ text&rdquo;</li>
 
 <li>&ldquo;some text&rdquo; &gt; cursor inside &gt; <code>cs"'</code> &gt; &rsquo;some text&rsquo;<br /></li>
 
-<li>&ldquo;some text&rdquo; &gt; cursor inside &gt; =cs&ldquo;=( &gt; (some text)<br /></li>
+<li>&ldquo;some text&rdquo; &gt; cursor inside &gt; =cs&ldquo;=( &gt; (some text)</li>
 
-<li>&ldquo;some text&rdquo; &gt; cursor inside &gt; <code>ds"</code> &gt; some text<br /></li>
+<li>&ldquo;some text&rdquo; &gt; cursor inside &gt; <code>ds"</code> &gt; some text</li>
 
 <li>some text &gt; cursor in some &gt; <code>ys2e"</code> &gt; &ldquo;some text&rdquo;</li>
 </ul>
 </div>
 </li>
 
-<li><a id="org58a45d6"></a>faq<br />
-<div class="outline-text-5" id="text-0-1-5-2">
+<li><a id="orge43ff77"></a>faq<br />
+<div class="outline-text-5" id="text-1-1-5-2">
 <p>
 How to duplicate a whole line in Vim? - yy or Y copy the line and p
 paste the line down and P(upper) paste above current line - 2yy can be
@@ -450,9 +458,9 @@ p paste the line
 </ol>
 </div>
 
-<div id="outline-container-org57247fc" class="outline-4">
-<h4 id="org57247fc"><span class="section-number-4">0.1.6.</span> Exiting</h4>
-<div class="outline-text-4" id="text-0-1-6">
+<div id="outline-container-org42e0f37" class="outline-4">
+<h4 id="org42e0f37"><span class="section-number-4">1.1.6.</span> Exiting</h4>
+<div class="outline-text-4" id="text-1-1-6">
 <ul class="org-ul">
 <li><code>:w</code> - Write (save) the file, but don&rsquo;t quit</li>
 <li><code>:wq</code> - Write (save) and quit</li>
@@ -462,9 +470,9 @@ p paste the line
 </div>
 </div>
 
-<div id="outline-container-org5840402" class="outline-4">
-<h4 id="org5840402"><span class="section-number-4">0.1.7.</span> Search/Replace</h4>
-<div class="outline-text-4" id="text-0-1-7">
+<div id="outline-container-orgd2e01c1" class="outline-4">
+<h4 id="orgd2e01c1"><span class="section-number-4">1.1.7.</span> Search/Replace</h4>
+<div class="outline-text-4" id="text-1-1-7">
 <ul class="org-ul">
 <li><code>/pattern</code> - Search for pattern</li>
 <li><code>?pattern</code> - Search backward for pattern</li>
@@ -483,9 +491,9 @@ confirmations</li>
 </div>
 </div>
 
-<div id="outline-container-org3358b15" class="outline-4">
-<h4 id="org3358b15"><span class="section-number-4">0.1.8.</span> General</h4>
-<div class="outline-text-4" id="text-0-1-8">
+<div id="outline-container-org4fa131c" class="outline-4">
+<h4 id="org4fa131c"><span class="section-number-4">1.1.8.</span> General</h4>
+<div class="outline-text-4" id="text-1-1-8">
 <ul class="org-ul">
 <li><code>u</code> - Undo</li>
 <li><code>Ctrl+r</code> - Redo</li>
@@ -494,13 +502,13 @@ confirmations</li>
 </div>
 </div>
 
-<div id="outline-container-org7154f80" class="outline-3">
-<h3 id="org7154f80"><span class="section-number-3">0.2.</span> Advanced</h3>
-<div class="outline-text-3" id="text-0-2">
+<div id="outline-container-org1431ef8" class="outline-3">
+<h3 id="org1431ef8"><span class="section-number-3">1.2.</span> Advanced</h3>
+<div class="outline-text-3" id="text-1-2">
 </div>
-<div id="outline-container-orgb0c257c" class="outline-4">
-<h4 id="orgb0c257c"><span class="section-number-4">0.2.1.</span> Cursor movement</h4>
-<div class="outline-text-4" id="text-0-2-1">
+<div id="outline-container-org6ed6553" class="outline-4">
+<h4 id="org6ed6553"><span class="section-number-4">1.2.1.</span> Cursor movement</h4>
+<div class="outline-text-4" id="text-1-2-1">
 <ul class="org-ul">
 <li><code>Ctrl+d</code> - Move down half a page</li>
 <li><code>Ctrl+u</code> - Move up half a page</li>
@@ -524,9 +532,9 @@ ZZ if the caps-lock is on.</li>
 </div>
 </div>
 
-<div id="outline-container-org1a7d7df" class="outline-4">
-<h4 id="org1a7d7df"><span class="section-number-4">0.2.2.</span> Character search</h4>
-<div class="outline-text-4" id="text-0-2-2">
+<div id="outline-container-org0a8f0bb" class="outline-4">
+<h4 id="org0a8f0bb"><span class="section-number-4">1.2.2.</span> Character search</h4>
+<div class="outline-text-4" id="text-1-2-2">
 <ul class="org-ul">
 <li><b><code>f [char]</code></b> - <b>Move forward to the given char</b></li>
 <li><code>F [char]</code> - Move backward to the given char</li>
@@ -537,9 +545,9 @@ ZZ if the caps-lock is on.</li>
 </div>
 </div>
 
-<div id="outline-container-orgd667654" class="outline-4">
-<h4 id="orgd667654"><span class="section-number-4">0.2.3.</span> Editing text</h4>
-<div class="outline-text-4" id="text-0-2-3">
+<div id="outline-container-org80a862d" class="outline-4">
+<h4 id="org80a862d"><span class="section-number-4">1.2.3.</span> Editing text</h4>
+<div class="outline-text-4" id="text-1-2-3">
 <ul class="org-ul">
 <li><code>J</code> - Join line below to the current one</li>
 <li><code>r [char]</code> - Replace a single character with the specified char (does
@@ -548,9 +556,9 @@ not use Insert mode)</li>
 </div>
 </div>
 
-<div id="outline-container-org7e31f7b" class="outline-4">
-<h4 id="org7e31f7b"><span class="section-number-4">0.2.4.</span> Visual mode</h4>
-<div class="outline-text-4" id="text-0-2-4">
+<div id="outline-container-orga07289f" class="outline-4">
+<h4 id="orga07289f"><span class="section-number-4">1.2.4.</span> Visual mode</h4>
+<div class="outline-text-4" id="text-1-2-4">
 <ul class="org-ul">
 <li><code>O</code> - Move to other corner of block</li>
 <li><code>o</code> - Move to other end of marked area</li>
@@ -558,9 +566,9 @@ not use Insert mode)</li>
 </div>
 </div>
 
-<div id="outline-container-org70b83fa" class="outline-4">
-<h4 id="org70b83fa"><span class="section-number-4">0.2.5.</span> File Tabs</h4>
-<div class="outline-text-4" id="text-0-2-5">
+<div id="outline-container-orge3b7b24" class="outline-4">
+<h4 id="orge3b7b24"><span class="section-number-4">1.2.5.</span> File Tabs</h4>
+<div class="outline-text-4" id="text-1-2-5">
 <ul class="org-ul">
 <li><code>:e filename</code> - Edit a file</li>
 <li><code>:tabe</code> - Make a new tab</li>
@@ -576,9 +584,9 @@ not use Insert mode)</li>
 </div>
 </div>
 
-<div id="outline-container-org2db9950" class="outline-4">
-<h4 id="org2db9950"><span class="section-number-4">0.2.6.</span> Marks</h4>
-<div class="outline-text-4" id="text-0-2-6">
+<div id="outline-container-org63ee123" class="outline-4">
+<h4 id="org63ee123"><span class="section-number-4">1.2.6.</span> Marks</h4>
+<div class="outline-text-4" id="text-1-2-6">
 <ul class="org-ul">
 <li><code>'</code> single quote</li>
 <li>Marks allow you to jump to designated points in your code.</li>
@@ -591,9 +599,9 @@ set</li>
 </div>
 </div>
 
-<div id="outline-container-orge8ffd2b" class="outline-4">
-<h4 id="orge8ffd2b"><span class="section-number-4">0.2.7.</span> macros</h4>
-<div class="outline-text-4" id="text-0-2-7">
+<div id="outline-container-org6ff3635" class="outline-4">
+<h4 id="org6ff3635"><span class="section-number-4">1.2.7.</span> macros</h4>
+<div class="outline-text-4" id="text-1-2-7">
 <ul class="org-ul">
 <li><code>q{a-z}</code> record macro in a-z character</li>
 <li><code>q</code> to stop</li>
@@ -602,9 +610,9 @@ set</li>
 </div>
 </div>
 
-<div id="outline-container-org84d3eec" class="outline-4">
-<h4 id="org84d3eec"><span class="section-number-4">0.2.8.</span> register</h4>
-<div class="outline-text-4" id="text-0-2-8">
+<div id="outline-container-org003d30f" class="outline-4">
+<h4 id="org003d30f"><span class="section-number-4">1.2.8.</span> register</h4>
+<div class="outline-text-4" id="text-1-2-8">
 <ul class="org-ul">
 <li><code>"{a-z}motion</code> to copy/yank/change/delete into letter</li>
 <li><code>"{a-z}p</code> to paste</li>
@@ -617,9 +625,9 @@ stored in register a.<br /></li>
 </div>
 </div>
 
-<div id="outline-container-org527b68b" class="outline-4">
-<h4 id="org527b68b"><span class="section-number-4">0.2.9.</span> Text Objects</h4>
-<div class="outline-text-4" id="text-0-2-9">
+<div id="outline-container-orgb265dd7" class="outline-4">
+<h4 id="orgb265dd7"><span class="section-number-4">1.2.9.</span> Text Objects</h4>
+<div class="outline-text-4" id="text-1-2-9">
 <ul class="org-ul">
 <li>Say you have <code>def (arg1, arg2, arg3)</code>, where your cursor is somewhere
 in the middle of the parenthesis.</li>
@@ -632,9 +640,9 @@ more</a></li>
 </div>
 </div>
 
-<div id="outline-container-org8be221b" class="outline-4">
-<h4 id="org8be221b"><span class="section-number-4">0.2.10.</span> General</h4>
-<div class="outline-text-4" id="text-0-2-10">
+<div id="outline-container-org6f9ff1e" class="outline-4">
+<h4 id="org6f9ff1e"><span class="section-number-4">1.2.10.</span> General</h4>
+<div class="outline-text-4" id="text-1-2-10">
 <ul class="org-ul">
 <li><code>.</code> - Repeat last command</li>
 <li><code>Ctrl+r + 0</code> in insert mode inserts the last yanked text (or in
@@ -645,10 +653,11 @@ command mode)</li>
 </div>
 </div>
 </div>
+</div>
 
-<div id="outline-container-org240a320" class="outline-2">
-<h2 id="org240a320"><span class="section-number-2">1.</span> Making VIM actually useful</h2>
-<div class="outline-text-2" id="text-1">
+<div id="outline-container-orgbd3bd51" class="outline-2">
+<h2 id="orgbd3bd51"><span class="section-number-2">2.</span> Making VIM actually useful</h2>
+<div class="outline-text-2" id="text-2">
 <p>
 Vim is quite unpleasant out of the box. It&rsquo;s an arcane experience:
 </p>
@@ -673,9 +682,9 @@ ideas on how to go about this.
 </p>
 </div>
 
-<div id="outline-container-org035b366" class="outline-3">
-<h3 id="org035b366"><span class="section-number-3">1.1.</span> Switch caps lock and escape</h3>
-<div class="outline-text-3" id="text-1-1">
+<div id="outline-container-orgae9b726" class="outline-3">
+<h3 id="orgae9b726"><span class="section-number-3">2.1.</span> Switch caps lock and escape</h3>
+<div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>I highly recommend you switch the mapping of your caps lock and escape
 keys. You&rsquo;ll love it, promise! Switching the two keys is platform
@@ -684,9 +693,9 @@ dependent.</li>
 </div>
 </div>
 
-<div id="outline-container-org9668d76" class="outline-3">
-<h3 id="org9668d76"><span class="section-number-3">1.2.</span> Visual Studio Code</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-orgf9a57aa" class="outline-3">
+<h3 id="orgf9a57aa"><span class="section-number-3">2.2.</span> Visual Studio Code</h3>
+<div class="outline-text-3" id="text-2-2">
 <p>
 gb - adds another cursor on the next word it finds which is the same as
 the word under the cursor.<br />
@@ -707,9 +716,9 @@ slight changes</a> which improved the experience for me.</li>
 </div>
 </div>
 
-<div id="outline-container-org49e1312" class="outline-3">
-<h3 id="org49e1312"><span class="section-number-3">1.3.</span> Configure native VIM</h3>
-<div class="outline-text-3" id="text-1-3">
+<div id="outline-container-org27fea14" class="outline-3">
+<h3 id="org27fea14"><span class="section-number-3">2.3.</span> Configure native VIM</h3>
+<div class="outline-text-3" id="text-2-3">
 <p>
 For all the given limitations, you&rsquo;ll need to find a solution. You can
 either solve the issues one by one, or you can use a reference .vimrc
@@ -724,9 +733,9 @@ vimrc.</li>
 </ul>
 </div>
 
-<div id="outline-container-org6500eb9" class="outline-4">
-<h4 id="org6500eb9"><span class="section-number-4">1.3.1.</span> Using the system clipboard</h4>
-<div class="outline-text-4" id="text-1-3-1">
+<div id="outline-container-org9a9ab57" class="outline-4">
+<h4 id="org9a9ab57"><span class="section-number-4">2.3.1.</span> Using the system clipboard</h4>
+<div class="outline-text-4" id="text-2-3-1">
 <ul class="org-ul">
 <li><code>"+y</code> copy a selection to the system clipboard</li>
 <li><code>"+p</code> paste from the system clipboard</li>
@@ -748,9 +757,9 @@ Install homebrew and then run <code>brew install vim</code>.
 </div>
 </div>
 
-<div id="outline-container-org5168236" class="outline-3">
-<h3 id="org5168236"><span class="section-number-3">1.4.</span> Sublime Text</h3>
-<div class="outline-text-3" id="text-1-4">
+<div id="outline-container-org43d8742" class="outline-3">
+<h3 id="org43d8742"><span class="section-number-3">2.4.</span> Sublime Text</h3>
+<div class="outline-text-3" id="text-2-4">
 <ul class="org-ul">
 <li>Another option is to use Vintageous in Sublime Text (version 3). This
 gives you Vim mode inside Sublime. I suggest this (or a similar setup
@@ -798,9 +807,9 @@ environment! Sweet Dude.</li>
 </div>
 </div>
 
-<div id="outline-container-orgcea28ea" class="outline-3">
-<h3 id="orgcea28ea"><span class="section-number-3">1.5.</span> Other</h3>
-<div class="outline-text-3" id="text-1-5">
+<div id="outline-container-orgffeefac" class="outline-3">
+<h3 id="orgffeefac"><span class="section-number-3">2.5.</span> Other</h3>
+<div class="outline-text-3" id="text-2-5">
 <p>
 I don&rsquo;t personally use these yet, but I&rsquo;ve heard other people do!
 </p>
@@ -813,9 +822,9 @@ I don&rsquo;t personally use these yet, but I&rsquo;ve heard other people do!
 </div>
 </div>
 
-<div id="outline-container-orgbcca343" class="outline-3">
-<h3 id="orgbcca343"><span class="section-number-3">1.6.</span> Additional resources</h3>
-<div class="outline-text-3" id="text-1-6">
+<div id="outline-container-org990fedc" class="outline-3">
+<h3 id="org990fedc"><span class="section-number-3">2.6.</span> Additional resources</h3>
+<div class="outline-text-3" id="text-2-6">
 <ul class="org-ul">
 <li><a href="advanced.html">Advanced Vim</a></li>
 <li><a href="http://www.amazon.com/Practical-Vim-Thought-Pragmatic-Programmers/dp/1934356980">Practical
@@ -828,7 +837,7 @@ vim.</li>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Yousuf Ali</p>
-<p class="date">Created: 2023-04-12 Wed 16:16</p>
+<p class="date">Created: 2023-04-12 Wed 17:46</p>
 </div>
 </body>
 </html>

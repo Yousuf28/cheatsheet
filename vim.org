@@ -19,8 +19,9 @@ and move to colors directory.\\
 monokai]]
 
 [[https://github.com/theicfire/vimsheet/blob/gh-pages/index.md][initial
-version copied from here]] # A Great Vim Cheat Sheet
+version copied from here]]
 
+* A Great Vim Cheat Sheet
 [[https://vim.rtorr.com/][vim_cheatsheet]]\\
 [[https://vimsheet.com/][vim_cheatsheet]]\\
 [[https://devhints.io][https://devhints.io/]]
@@ -136,9 +137,9 @@ version copied from here]] # A Great Vim Cheat Sheet
 
 - "some text" > cursor inside > =cs"'= > 'some text'\\
 
-- "some text" > cursor inside > =cs"=( > (some text)\\
+- "some text" > cursor inside > =cs"=( > (some text)
 
-- "some text" > cursor inside > =ds"= > some text\\
+- "some text" > cursor inside > =ds"= > some text
 
 - some text > cursor in some > =ys2e"= > "some text"
 

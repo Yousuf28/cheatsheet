@@ -18,7 +18,8 @@ if directory not exist. then
  [cobalt](https://github.com/gkjgh/cobalt)  
  [sublime monokai](https://github.com/ErichDonGubler/vim-sublime-monokai)  
 
-[initial version copied from here](https://github.com/theicfire/vimsheet/blob/gh-pages/index.md)
+[initial version copied from here](https://github.com/theicfire/vimsheet/blob/gh-pages/index.md)  
+
 # A Great Vim Cheat Sheet
 
 [vim_cheatsheet](https://vim.rtorr.com/)  
@@ -106,9 +107,9 @@ __ci(xyz[Esc]__ - This is a weird one. Here, the 'i' does not mean insert mode. 
 - some text > visually select `some text` > `S"` (capital S) > "some text"
 - some text > cursor on some > `ysiw"` > "some" text
 - "some text" > cursor inside > `cs"'` > 'some text'  
-- "some text" > cursor inside > `cs"`( > (some text)  
-- "some text" > cursor inside > `ds"` > some text  
-- some text > cursor in some > `ys2e"` > "some text"  
+- "some text" > cursor inside > `cs"`( > (some text)
+- "some text" > cursor inside > `ds"` > some text
+- some text > cursor in some > `ys2e"` > "some text" 
 
 
 #### faq
@@ -132,6 +133,7 @@ How to duplicate a whole line in Vim?
 - `N` - Repeat search in opposite direction
 - `:%s/old/new/g` - Replace all old with new throughout file ([gn](http://vimcasts.org/episodes/operating-on-search-matches-using-gn/) is better though)
 - `:%s/old/new/gc` - Replace all old with new throughout file with confirmations
+- visual selection `:s/old/new/gc`
 - `:noh` - To turn off highlighting until the next search
 - `q/` - show recent search term
 - `*` - forward search word under cursor (very helpful)
@@ -197,18 +199,22 @@ For what it's worth, <kbd>z</kbd><kbd>.</kbd> avoids the danger of saving and cl
 - `ctrl+wq` - Quit a window
 
 ### Marks
-- `'`  single quote
+- ``` backtick will set mark at the point 
+- `'`  single quote set mark at line level
 - Marks allow you to jump to designated points in your code.
 - `m{a-z}` - Set mark {a-z} at cursor position
 - A capital mark {A-Z} sets a global mark and will work between files
 - `'{a-z}` - Move the cursor to the start of the line where the mark was set
 - `''` - Go back to the previous jump location
+- `'.` where last changed occured
+- `'[` jump to previously changed or yanked text
 
 ### macros
 
 - `q{a-z}`  record macro in a-z character
 - `q` to stop
 - `@{a-z}` play macro
+- `@@` play last macro
 
 ### register
 - `"{a-z}motion` to copy/yank/change/delete into letter
