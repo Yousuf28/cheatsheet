@@ -52,6 +52,8 @@ echo -e -n "\x1b[\x35 q" # changes to blinking bar
 
 ## 
 
+- [How to Archive and Compress Files with the tar and gizp Commands in Linux](https://www.cherryservers.com/blog/how-to-archive-and-compress-files-with-the-tar-and-gizp-commands-in-linux#:~:text=The%20basic%20difference%20between%20the,files%20while%20gzip%20compresses%20files.)
+
 #### make many folder at once
 
 ``` 
