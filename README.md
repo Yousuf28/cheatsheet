@@ -209,6 +209,8 @@ Port 443
 
 [github and gitlab from same machine](https://medium.com/@viviennediegoencarnacion/manage-github-and-gitlab-accounts-on-single-machine-with-ssh-keys-on-mac-43fda49b7c8d)  
 
+- [linux wifi adapter setup](https://www.jilaxzone.com/2022/09/06/heres-how-to-enable-realtek-rtl8188ftv-wi-fi-adapter-on-linux-ubuntu-beginner-friendly-guide/)
+- 
 ## R version
 
 - [How to use `ln -s` to change between R Versions on Mac?](https://stackoverflow.com/questions/56481250/how-to-use-ln-s-to-change-between-r-versions-on-mac)
