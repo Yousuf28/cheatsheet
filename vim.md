@@ -209,6 +209,7 @@ For what it's worth, <kbd>z</kbd><kbd>.</kbd> avoids the danger of saving and cl
 - `'.` where last changed occured
 - `'[` jump to previously changed or yanked text
 - [mark](https://vim.fandom.com/wiki/Using_marks "mark")
+- [marks and jumps](https://www.linux.com/news/vim-tips-moving-around-using-marks-and-jumps/)
 
 ### macros
 

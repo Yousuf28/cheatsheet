@@ -1,0 +1,53 @@
+. /c/Users/Md.Ali/Anaconda3/etc/profile.d/conda.sh
+alias docker='winpty docker'
+# alias vim='gvim'
+# alias vi='gvim'
+alias ub='ubuntu'
+alias nvq='nvim-qt'
+alias ya='cd "/c/Users/Md.Ali/OneDrive - FDA/yousuf/"'
+alias treed="ls -R | grep \":$\" | perl -pe 's/:$//;s/[^-][^\/]*\// /g;s/^ (\S)/└── \1/;s/(^ | (?= ))/│ /g;s/ (\S)/└── \1/'"
+alias treef='find . -not -path "*/\.*" | sed -e "s/[^-][^\/]*\// |/g" -e "s/|\([^ ]\)/|-\1/"'
+alias treefh='find . | sed -e "s/[^-][^\/]*\// |/g" -e "s/|\([^ ]\)/|-\1/"'
+alias hs='history 16 | head -n 15'
+alias ll='ls -lah'
+# alias ll='ls -l'
+HISTSIZE=5000
+HISTFILESIZE=10000
+shopt -s histappend
+gitpush() {
+    git add -u
+    git commit -m "$*"
+    git push
+}
+alias gp=gitpush
+
+alias grep='grep --color=auto'
+set -o vi
+
+export R='C:\"Program Files"\R\R-4.1.2\bin\R.exe'
+export R_path='C:\"Program Files"\R\R-4.1.2\bin\Rscript.exe'
+export FZF_DEFAULT_COMMAND='fd --type file --exclude .git'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+fcd() {
+    local target; 
+    target="$(fd --type d | fzf)" || return;
+    cd "${target%\*}"
+}
+
+alias psql='psql -h localhost -U postgres -p 5433'
+# eval "$(dircolors <(dircolors -p | grep -v '^[.#]' | sed -E '/DIR/s/[0-9;]{5}/01;33/g'))"
+#export LS_COLORS+=':tw=01;34:ow=01;34:st=01;34'
+# color for less and man 
+# export MANPAGER='less -s -M +Gg'
+# export LESS="--RAW-CONTROL-CHARS"
+# lesscolors=$HOME/bin/.LESS_TERMCAP
+# [[ -f $lesscolors ]] && . $lesscolors
+tmux () {
+    TMUX="command tmux ${@}"
+    SHELL=/c/msys64/usr/bin/bash script -qO /dev/null -c "eval $TMUX";
+}
+alias rad="radian --r-binary=R"
+# export SHELL='C:/"Program Files"/Git/bin/bash.exe'
+# export SHELL='C:/msys64/usr/bin/bash.exe'
+# vim.env.MYVIMRC = '/home/luis/.config/nvim/init.vim
