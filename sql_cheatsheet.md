@@ -1,3 +1,5 @@
+[copied from here](https://github.com/enochtangg/quick-SQL-cheatsheet)
+
 # Quick SQL Cheatsheet
 
 A quick reminder of all relevant SQL queries and examples on how to use them. 
