@@ -23,6 +23,8 @@
 ## R tutorial
 
 - [R Tutorial and tips](https://github.com/Yousuf28/R_tutorial/blob/master/README.md)
+## SQL 
+- [SQL cheatsheet](https://github.com/Yousuf28/cheatsheet/blob/master/sql_cheatsheet.md)
 
 # Terminal
 
