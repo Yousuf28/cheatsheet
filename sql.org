@@ -1,0 +1,9 @@
+#+title: SQL
+
+** postgres
+psql metacommand:
+equivalent command can be shown in terminal by setting
+\set ECHO_HIDDEN true
+to off
+\set ECHO_HIDDEN false
+[[https://stackoverflow.com/questions/66309553/how-to-run-a-psql-metacommand-in-sql][show_command]]

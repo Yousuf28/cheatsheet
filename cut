@@ -1,0 +1,9 @@
+# To cut out the third field of text or stdoutput that is delimited by a #:
+cut -d# -f3
+
+# get 1 and 3 with delimiter :
+
+cut -d ':' -f 1,3
+
+# get 1 to 3 
+cut -d ':' -f 1-3

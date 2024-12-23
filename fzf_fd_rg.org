@@ -1,0 +1,45 @@
+#+title: Fzf Fd Rg
+
+
+## rg
+
+find a match in all files
+
+#+begin_src
+rg foo
+
+#+end_src
+
+find a match in specific fily type
+
+#+begin_src
+rg -thtml foo
+
+#+end_src
+
+
+
+exclude file type(exclude html file type)
+
+#+begin_src
+rg -Thtml foo
+
+#+end_src
+
+
+## print only file name
+
+#+begin_src
+rg -l 'foo'
+
+#+end_src
+
+#+begin_src
+rg -c foo
+
+  -c, --count
+            Only show the count of matching lines for each file.
+
+        --count-matches
+            Only show the count of individual matches for each file.
+#+end_src

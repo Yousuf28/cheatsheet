@@ -1,0 +1,55 @@
+# command Palette
+Ctrl + K 
+
+# next page /previous page
+n / p - Next / previous page
+
+# scroll
+j / k - Scroll up / down by line
+h / l - Scroll left / right
+
+# type g, and the page number
+g - Go to page
+
+# first page 
+Home - Go to first page
+End - Go to last page
+
+
+
+#  close
+Ctrl + O - Open a new document
+Ctrl + W - Close current document
+q - Close current document (tab). Close window if last tab. Quit app if last window.
+
+# tab
+
+Ctrl + Tab - go to next tab
+Ctrl + Shift + Tab - go to previous tab
+Alt + 1 - go to tab 1. Use Alt + 2, etc. up to Alt + 8
+Alt + 9 - go to last tab
+
+Up / Down - Scroll up/down by line
+Shift + Left / Shift + Right- Scroll left /right faster
+
+# scroll
+space - Scroll by screen
+Shift + space - Scroll back by screen
+
+# 
+Page Down / Page Up - Next / previous page
+Ctrl + Down / Ctrl + Up - Next / previous page
+Alt + Left - Go back
+Alt + Right - Go forward
+Ctrl + G - Go to page
+b - Flip a page in book mode
+# next open
+Ctrl + Shift + Right - Open next document in the directory
+
+#  zoom 
+
++ / - - zoom in/out
+Ctrl + scroll wheel - zoom in/out
+z - toggle zoom between Fit Page, Fit Width, Fit Content
+c - toggle between continuous/non-continuous mode
+# 

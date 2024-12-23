@@ -1,0 +1,7 @@
+# get tasklist for a app like emacs
+
+tasklist | grep emacs
+
+# kill the application with force 
+
+taskkill //PID 12344 //f

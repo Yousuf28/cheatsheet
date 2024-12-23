@@ -27,6 +27,37 @@ rename origin to destination  ( for github)
 ```git remote add name_fda url```  
 
 
+- git diff HEAD
+
+`git diff HEAD` is similar to `git diff`  
+last change
+
+if git diff clean:
+
+Now to compare last commit
+`git diff HEAD~1..HEAD`
+ 
+ if i count last commit 1 and previous one 2. 
+ 
+
+`git diff HEAD~2..HEAD~1` this gives what changes in last 2 commit
+to see
+
+
+commit n(1)
+commit n-1(2)
+commit n-2(3)
+
+to see changes from 3 to 2 `git diff HEAD~3..HEAD~2`  
+
+last commit changes `git diff HEAD~1..HEAD`
+
+- __delete a directory of data/ with commit update (so no one can go back and access data)__  
+`git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch Data/' HEAD`
+
+`git push origin master --force`
+
+
 1. [I want to clone a project and start going through the code.](#1-i-want-to-clone-a-project-and-start-going-through-the-code)
 1. [I have cloned the repo. But I am not able to see the proper code!!!](#2-i-have-cloned-the-repo-but-i-am-not-able-to-see-the-proper-code)
 1. [Someone has made a few changes in the code and asked me to pull those changes. What should I do?](#3-someone-has-made-a-few-changes-in-the-code-and-asked-me-to-pull-those-changes-what-should-i-do)
