@@ -10,6 +10,8 @@
 
 [vim in the browser_ vimium](https://github.com/philc/vimium)  
 
+## read medium article free
+- [link](https://www.reddit.com/r/Piracy/comments/16b9jzn/how_can_i_read_medium_articles_for_free_as/)
 ## terminal keyboard shortcut
 
 [my vscode/terminal navigation shortcut](https://github.com/Yousuf28/cheatsheet/blob/master/terminal/terminal.md)  
