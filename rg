@@ -14,3 +14,6 @@ rg -l pattern
 rg pattern -g '*.R'
 
 # get 
+- [cheatsheet](https://skerritt.blog/ripgrep-cheatsheet/)  
+- [cheatsheet2](https://jdhao.github.io/2020/02/16/ripgrep_cheat_sheet/)  
+
