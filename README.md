@@ -18,6 +18,8 @@
 [vscode for windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
 ## git cheatsheet
 [My git guide](https://github.com/Yousuf28/cheatsheet/blob/master/gitGuide.md)  
+[git cheatsheet_GPT](https://github.com/Yousuf28/cheatsheet/blob/master/git_2.md)  
+
 
 ## Docker 
 - [Docker cheatsheet](https://github.com/Yousuf28/dockercheatsheets)
